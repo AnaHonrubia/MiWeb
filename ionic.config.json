@@ -1,0 +1,7 @@
+{
+  "name": "miWebPersonal",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular-standalone"
+}
