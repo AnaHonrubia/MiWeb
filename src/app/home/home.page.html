@@ -1,18 +1,19 @@
-<ion-header [translucent]="true">
-  <ion-toolbar color="dark">
+<ion-header [translucent]="true" class="ion-no-border">
+  <ion-toolbar color="dark" style="--padding-start: 8px; --padding-end: 8px;">
     <ion-buttons slot="start">
-      <ion-button (click)="scrollTo('sobre-mi')" style="--color: #ffffff; font-weight: 500;">Sobre mí</ion-button>
-      <ion-button (click)="scrollTo('formacion')" style="--color: #00d2ff; font-weight: 500;">Formación</ion-button>
-      <ion-button (click)="scrollTo('experiencia')" style="--color: #a29bfe; font-weight: 500;">Experiencia</ion-button>
+      <ion-button (click)="scrollTo('sobre-mi')" style="--color: #ffffff; font-size: 0.9rem; font-weight: 500;">Sobre mí</ion-button>
+      <ion-button (click)="scrollTo('formacion')" style="--color: #00d2ff; font-size: 0.9rem; font-weight: 500;">Formación</ion-button>
+      <ion-button (click)="scrollTo('experiencia')" style="--color: #a29bfe; font-size: 0.9rem; font-weight: 500;">Experiencia</ion-button>
     </ion-buttons>
 
     <ion-buttons slot="end" style="margin-right: 15px;">
       <ion-button (click)="openCV()" 
                   style="--background: #6c5ce7; 
                          color: white; 
-                         --border-radius: 8px; 
-                         font-weight: bold; 
-                         padding: 0 10px;">
+                         --border-radius: 10px; 
+                         font-weight: bold;
+                         --padding-start: 15px;
+                         --padding-end: 15px;">
         Descargar CV
       </ion-button>
     </ion-buttons>
@@ -20,11 +21,57 @@
 </ion-header>
 
 <ion-content [fullscreen]="true" style="--background: #000000;">
-  <div style="text-align: center; padding: 60px 20px;">
-    <h1 style="font-size: 3.5em; font-weight: 800; background: linear-gradient(to right, #a29bfe, #6c5ce7, #00d2ff); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">
+  <div style="text-align: center; padding: 80px 20px 40px 20px;">
+    <h1 style="font-size: 3.5em; font-weight: 800; background: linear-gradient(to right, #a29bfe, #6c5ce7, #00d2ff); -webkit-background-clip: text; -webkit-text-fill-color: transparent; margin: 0;">
       Ana Honrubia Borja
     </h1>
-    <p style="color: #888; font-size: 1.2em;">Estudiante de DAM | IES Leonardo Da Vinci</p>
+    <p style="color: #888; font-size: 1.3em; margin-top: 10px;">Estudiante de DAM | IES Leonardo Da Vinci</p>
   </div>
 
-  </ion-content>
+  <section id="sobre-mi" style="padding: 20px; text-align: center;">
+    <h2 style="color: white; border-bottom: 2px solid #6c5ce7; display: inline-block; padding-bottom: 5px;">Sobre mí</h2>
+    <ion-card style="--background: #121212; border: 1px solid #333; margin-top: 20px;">
+      <ion-card-content style="color: #cccccc; font-size: 1.1em; line-height: 1.6;">
+        Me considero una persona responsable y ordenada. Me gusta trabajar en equipo y busco mi primera experiencia laboral con muchas ganas de aprender.
+      </ion-card-content>
+    </ion-card>
+  </section>
+
+  <section id="formacion" style="padding: 20px;">
+    <h2 style="color: white; text-align: center;">Formación Académica</h2>
+    <ion-list style="background: transparent;">
+      <ion-item style="--background: transparent; --color: white; margin-bottom: 10px;">
+        <ion-label>
+          <h3 style="color: #a29bfe; font-weight: bold;">Grado Superior DAM</h3>
+          <p style="color: #00d2ff;">IES Leonardo Da Vinci (2024 - Actualidad)</p>
+          <p style="color: #888;">Prácticas 2º Curso: 400h en GRUPO MOVIL CONECTATE S.L.</p>
+        </ion-label>
+      </ion-item>
+      <ion-item style="--background: transparent; --color: white;">
+        <ion-label>
+          <h3 style="color: #ffffff;">Bachiller Ciencias de la Salud</h3>
+          <p style="color: #888;">IES Alto de los Molinos (Graduada 2024)</p>
+        </ion-label>
+      </ion-item>
+    </ion-list>
+  </section>
+
+  <section id="experiencia" style="padding: 20px;">
+    <h2 style="color: white; text-align: center;">Experiencia Laboral</h2>
+    <ion-card style="--background: #121212; border-left: 4px solid #6c5ce7;">
+      <ion-card-header>
+        <ion-card-subtitle style="color: #a29bfe;">3D Seguridad</ion-card-subtitle>
+        <ion-card-title style="color: white;">Departamento de Contabilidad</ion-card-title>
+      </ion-card-header>
+      <ion-card-content style="color: #bbb;">Junio - Septiembre 2025</ion-card-content>
+    </ion-card>
+
+    <ion-card style="--background: #121212; border-left: 4px solid #00d2ff;">
+      <ion-card-header>
+        <ion-card-subtitle style="color: #00d2ff;">TECON</ion-card-subtitle>
+        <ion-card-title style="color: white;">Prácticas FP Dual (100h)</ion-card-title>
+      </ion-card-header>
+      <ion-card-content style="color: #bbb;">Mayo 2025</ion-card-content>
+    </ion-card>
+  </section>
+</ion-content>
