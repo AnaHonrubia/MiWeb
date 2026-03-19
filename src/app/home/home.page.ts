@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 import { 
   IonHeader, IonToolbar, IonTitle, IonContent, IonButton, IonButtons, 
   IonCard, IonCardHeader, IonCardTitle, IonCardSubtitle, IonCardContent, 
-  IonItem, IonLabel, IonList, IonIcon, IonGrid, IonCol, IonBadge, IonRow
+  IonItem, IonLabel, IonList, IonIcon, IonGrid, IonCol, IonBadge, IonRow, IonAvatar, IonImg
 } from '@ionic/angular/standalone';
 
 @Component({
@@ -13,7 +13,7 @@ import {
   imports: [
       IonHeader, IonToolbar, IonTitle, IonContent, IonButton, IonButtons, 
       IonCard, IonCardHeader, IonCardTitle, IonCardSubtitle, IonCardContent, 
-      IonItem, IonLabel, IonList, IonIcon, IonGrid, IonCol, IonBadge, IonRow
+      IonItem, IonLabel, IonList, IonIcon, IonGrid, IonCol, IonBadge, IonRow, IonAvatar, IonImg
   ],
 })
 

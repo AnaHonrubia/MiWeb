@@ -22,54 +22,130 @@
 </ion-header>
 
 <ion-content [fullscreen]="true" style="--background: #000000;">
-  <div style="text-align: center; padding: 80px 20px 40px 20px;">
-    <h1 style="font-size: 3.5em; font-weight: 800; background: linear-gradient(to right, #a29bfe, #6c5ce7, #00d2ff); -webkit-background-clip: text; -webkit-text-fill-color: transparent; margin: 0;">
+  
+  <div style="text-align: center; padding: 100px 20px 60px 20px; background: linear-gradient(180deg, #1a1a1a 0%, #000000 100%);">
+    
+    <ion-avatar style="width: 150px; height: 150px; margin: 0 auto; border: 4px solid #6c5ce7; box-shadow: 0 0 20px rgba(108, 92, 231, 0.5);">
+      <ion-img src="assets/icon/perfil.png" alt="Ana Honrubia"></ion-img>
+    </ion-avatar>
+
+    <h1 style="font-size: 3.5em; font-weight: 800; background: linear-gradient(to right, #a29bfe, #6c5ce7, #00d2ff); -webkit-background-clip: text; -webkit-text-fill-color: transparent; margin-top: 30px; margin-bottom: 10px;">
       Ana Honrubia Borja
     </h1>
-    <p style="color: #888; font-size: 1.3em; margin-top: 10px;">Estudiante de DAM | IES Leonardo Da Vinci</p>
+
+    <p style="color: #ffffff; font-size: 1.4em; font-weight: 500; margin-top: 0;">
+      Estudiante de DAM | Especializada en Angular e Ionic
+    </p>
+    <p style="color: #888; font-size: 1.1em; max-width: 600px; margin: 10px auto 0 auto;">
+      IES Leonardo Da Vinci. Más de 500 horas de prácticas en empresas tecnológicas.
+    </p>
+
+    <ion-button color="light" fill="outline" style="margin-top: 30px;" (click)="scrollTo('sobre-mi')">
+      Conóceme
+    </ion-button>
   </div>
+  <section id="sobre-mi" style="padding: 60px 20px; background: #000000; text-align: center;">
+  
+  <h2 style="color: white; font-size: 2.2em; font-weight: bold; margin-bottom: 10px;">Sobre Mí</h2>
+  <div style="width: 60px; height: 3px; background: linear-gradient(to right, #a29bfe, #6c5ce7); margin: 0 auto 40px auto; border-radius: 2px;"></div>
 
-  <section id="sobre-mi" style="padding: 20px; text-align: center;">
-    <h2 style="color: white; border-bottom: 2px solid #6c5ce7; display: inline-block; padding-bottom: 5px;">Sobre mí</h2>
-    <ion-card style="--background: #121212; border: 1px solid #333; margin-top: 20px;">
-      <ion-card-content style="color: #cccccc; font-size: 1.1em; line-height: 1.6;">
-        Me considero una persona responsable y ordenada. Me gusta trabajar en equipo y busco mi primera experiencia laboral con muchas ganas de aprender.
-      </ion-card-content>
-    </ion-card>
-  </section>
+  <p style="color: #cccccc; font-size: 1.1em; max-width: 800px; margin: 0 auto 50px auto; line-height: 1.6; text-align: justify;">
+    ¡Hola! Soy <b>Ana Honrubia Borja</b>, estudiante de DAM en el IES Leonardo Da Vinci. 
+    Me defino como una persona responsable, ordenada y con gran capacidad de trabajo en equipo. Busco mi primera oportunidad para demostrar mis ganas de aprender y crecer en el sector tecnológico.
+  </p>
 
-  <section id="formacion" style="padding: 20px;">
-  <h2 style="color: white; text-align: center;">Formación</h2>
+  <ion-grid style="max-width: 900px; margin: 0 auto;">
+    <ion-row class="ion-justify-content-center">
+      
+      <ion-col size="12" size-md="6">
+        <ion-card style="--background: #121212; border: 1px solid #333; margin: 10px; height: 100%; border-radius: 12px; box-shadow: 0 4px 6px rgba(0,0,0,0.3);">
+          <ion-card-content style="padding: 25px 15px; text-align: center;">
+            
+            <ion-avatar style="width: 80px; height: 80px; margin: 0 auto 20px auto; border: 3px solid #6c5ce7; box-shadow: 0 0 10px rgba(108, 92, 231, 0.5);">
+              <img src="assets/icon/desarrollo.jpg" alt="Desarrollo" style="width: 100%; height: 100%; object-fit: contain;" />
+            </ion-avatar>
+
+            <h3 style="color: white; font-weight: bold; font-size: 1.4em; margin-bottom: 15px;">Desarrollo</h3>
+          
+            <p style="color: #888; font-size: 1rem; line-height: 1.6; margin: 0; max-width: 250px; margin-left: auto; margin-right: auto;">
+              Construyo aplicaciones web o multiplataforma utilizando las últimas tecnologías.
+            </p>
+              
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+
+      <ion-col size="12" size-md="6">
+        <ion-card style="--background: #121212; border: 1px solid #333; margin: 10px; height: 100%; border-radius: 12px; box-shadow: 0 4px 6px rgba(0,0,0,0.3);">
+          <ion-card-content style="padding: 25px 15px; text-align: center;">
+            
+            <ion-avatar style="width: 80px; height: 80px; margin: 0 auto 20px auto; border: 3px solid #00d2ff; box-shadow: 0 0 10px rgba(0, 210, 255, 0.5);">
+              <img src="assets/icon/soluciones.jpg" alt="Soluciones" style="width: 100%; height: 100%; object-fit: contain;" />
+            </ion-avatar>
+
+            <h3 style="color: white; font-weight: bold; font-size: 1.25em; margin-bottom: 8px;">Soluciones</h3>
+            <p style="color: #888; font-size: 0.95em; line-height: 1.5; margin: 0;">
+              Me gusta plantear los retos con un enfoque creativo, buscando siempre la mejor experiencia para el usuario.
+            </p>
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+
+    </ion-row>
+  </ion-grid>
+</section>
+
+<section id="formacion" style="padding: 40px 20px;">
+  <h2 style="color: white; text-align: center; margin-bottom: 30px; font-weight: bold;">Formación Académica</h2>
+  
   <ion-list style="background: transparent;">
+    <ion-item style="--background: transparent; --color: white; margin-bottom: 20px;">
+      <ion-label>
+        <h3 style="color: #a29bfe; font-size: 1.3rem; font-weight: bold;">Grado Superior DAM</h3>
+        <p style="color: #ffffff; font-size: 1.1rem;">IES Leonardo Da Vinci (2024 - Actualidad)</p>
+        <p style="color: #00d2ff; margin-top: 8px; font-style: italic;">
+          Prácticas 2º Curso: 400h en GRUPO MOVIL CONECTATE S.L.
+        </p>
+        <p style="color: #00d2ff; font-style: italic;">
+          FP Dual 1º Curso: 100h en TECON (Mayo 2025)
+        </p>
+      </ion-label>
+    </ion-item>
+
     <ion-item style="--background: transparent; --color: white;">
       <ion-label>
-        <h3 style="color: #a29bfe; font-weight: bold;">Grado Superior DAM</h3>
-        <p style="color: #ffffff;">IES Leonardo Da Vinci (2024 - Actualidad)</p>
-        <p style="color: #00d2ff; font-style: italic;">Prácticas 2º Curso: 400h en GRUPO MOVIL CONECTATE S.L.</p>
+        <h3 style="color: #a29bfe; font-size: 1.3rem; font-weight: bold;">Bachiller Ciencia de la Salud</h3>
+        <p style="color: #ffffff; font-size: 1.1rem;">IES Alto de los Molinos (Graduada en 2024)</p>
       </ion-label>
     </ion-item>
   </ion-list>
 </section>
 
-  <section id="proyectos" style="padding: 20px;">
-  <h2 style="color: white; text-align: center; margin-bottom: 30px;">Mis Proyectos</h2>
+<section id="proyectos" style="padding: 20px;">
+  <h2 style="color: white; text-align: center; margin-bottom: 30px; font-weight: bold;">Mis Proyectos</h2>
+  
   <ion-grid>
     <ion-row>
       <ion-col size="12" size-md="6">
-        <ion-card style="--background: #121212; border: 1px solid #333; margin: 0;">
-          <img src="assets/proyectos/feria.jpg" style="width: 100%; height: 200px; object-fit: cover;" alt="Web Feria" />
-          
+        <ion-card style="--background: #121212; border: 1px solid #333; margin: 0; text-align: center;">
           <ion-card-header>
-            <div style="display: flex; justify-content: space-between; align-items: center;">
-              <ion-card-title style="color: white;">Feria de Albacete</ion-card-title>
-              <ion-badge color="primary">Angular</ion-badge>
-            </div>
-            <ion-card-subtitle style="color: #00d2ff;">Proyecto de Interfaces</ion-card-subtitle>
+            <ion-card-title style="color: white; font-weight: bold;">Queso Mecanico</ion-card-title>
+            <ion-card-subtitle style="color: #00d2ff;">Desarrollo de Interfaces</ion-card-subtitle>
           </ion-card-header>
           
           <ion-card-content style="color: #bbb;">
-            Web informativa desarrollada con Angular para la gestión de eventos y mapas de la Feria de Albacete.
-            <div style="margin-top: 15px;">
+            Aplicación web/móvil desarrollada en Angular e Ionic para la creación de itinerarios turísticos personalizados mediante el filtrado dinámico de destinos.
+            Destaca por su motor lógico que gestiona datos relacionales, calcula presupuestos en tiempo real y garantiza la persistencia de información en el dispositivo.
+            <div style="margin-top: 15px; display: flex; gap: 5px; justify-content: center;">
+              <ion-badge style="--background: #a29bfe; color: black;">Angular</ion-badge>
+              <ion-badge style="--background: #a29bfe; color: black;">Ionic</ion-badge>
+              <ion-badge style="--background: #a29bfe; color: black;">Capacitor</ion-badge>
+              <ion-badge style="--background: #a29bfe; color: black;">HTML</ion-badge>
+              <ion-badge style="--background: #a29bfe; color: black;">TS</ion-badge>
+              <ion-badge style="--background: #a29bfe; color: black;">SCSS</ion-badge>
+            </div>
+            
+            <div style="margin-top: 20px;">
               <ion-button fill="outline" size="small" style="--color: #a29bfe; --border-color: #a29bfe;" href="https://tu-enlace-feria.com" target="_blank">
                 Ver Demo
               </ion-button>
@@ -78,21 +154,22 @@
         </ion-card>
       </ion-col>
 
-      <ion-col size="12" size-md="6">
-        <ion-card style="--background: #121212; border: 1px solid #333; margin: 0;">
-          <img src="assets/proyectos/futbol.jpg" style="width: 100%; height: 200px; object-fit: cover;" alt="App Fútbol" />
+        <ion-col size="12" size-md="6">
+        <ion-card style="--background: #121212; border: 1px solid #333; margin: 0; text-align: center;">
           
           <ion-card-header>
-            <div style="display: flex; justify-content: space-between; align-items: center;">
-              <ion-card-title style="color: white;">App Fútbol TFG</ion-card-title>
-              <ion-badge color="secondary">Ionic</ion-badge>
-            </div>
-            <ion-card-subtitle style="color: #a29bfe;">Trabajo Fin de Grado</ion-card-subtitle>
+            <ion-card-title style="color: white; font-weight: bold;">App Futbol TFG</ion-card-title>
+            <ion-card-subtitle style="color: #00d2ff;">Proyecto final de grado</ion-card-subtitle>
           </ion-card-header>
           
           <ion-card-content style="color: #bbb;">
-            Aplicación multiplataforma para la gestión de estadísticas de equipos locales y resultados en tiempo real.
-            <div style="margin-top: 15px;">
+            Aplicación móvil diseñada para digitalizar el scouting futbolístico, facilitando a los clubes el descubrimiento de talento mediante perfiles multimedia. Incluye un sistema de mensajería de ofertas vinculado a bases de datos NoSQL para garantizar la comunicación directa entre el club y el jugador.
+            <div style="margin-top: 15px; display: flex; gap: 5px; justify-content: center;">
+              <ion-badge style="--background: #00d2ff; color: black;">Android Studio</ion-badge>
+              <ion-badge style="--background: #00d2ff; color: black;">Firebase</ion-badge>
+            </div>
+            
+            <div style="margin-top: 20px;">
               <ion-button fill="outline" size="small" style="--color: #00d2ff; --border-color: #00d2ff;" href="https://tu-enlace-tfg.com" target="_blank">
                 Ver Demo
               </ion-button>
@@ -121,5 +198,14 @@
       </ion-card-header>
       <ion-card-content style="color: #bbb;">Mayo 2025</ion-card-content>
     </ion-card>
+
+    <ion-card style="--background: #121212; border-left: 4px solid #00d2ff;">
+      <ion-card-header>
+        <ion-card-subtitle style="color: #00d2ff;">GRUPO MOVIL CONECTATE S.L</ion-card-subtitle>
+        <ion-card-title style="color: white;">Prácticas 2º Curso GS DAM (400h)</ion-card-title>
+      </ion-card-header>
+      <ion-card-content style="color: #bbb;">Marzo - Junio 2026</ion-card-content>
+    </ion-card>
+
   </section>
 </ion-content>
