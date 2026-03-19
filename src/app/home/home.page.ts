@@ -1,6 +1,8 @@
 import { Component } from '@angular/core';
-import { IonHeader, IonToolbar, IonTitle, IonContent, IonButton, IonButtons, IonCard, IonCardHeader, IonCardTitle, 
-         IonCardSubtitle, IonCardContent, IonItem, IonLabel, IonList, IonIcon, IonGrid, IonRow, IonCol
+import { 
+  IonHeader, IonToolbar, IonTitle, IonContent, IonButton, IonButtons, 
+  IonCard, IonCardHeader, IonCardTitle, IonCardSubtitle, IonCardContent, 
+  IonItem, IonLabel, IonList, IonIcon 
 } from '@ionic/angular/standalone';
 
 @Component({
@@ -8,8 +10,10 @@ import { IonHeader, IonToolbar, IonTitle, IonContent, IonButton, IonButtons, Ion
   templateUrl: 'home.page.html',
   styleUrls: ['home.page.scss'],
   standalone: true,
-  imports: [IonHeader, IonToolbar, IonTitle, IonContent, IonButton, IonButtons, IonCard, IonCardHeader, IonCardTitle, 
-            IonCardSubtitle, IonCardContent, IonItem, IonLabel, IonList, IonIcon, IonGrid, IonRow, IonCol
+  imports: [
+      IonHeader, IonToolbar, IonTitle, IonContent, IonButton, IonButtons, 
+      IonCard, IonCardHeader, IonCardTitle, IonCardSubtitle, IonCardContent, 
+      IonItem, IonLabel, IonList, IonIcon
   ],
 })
 
