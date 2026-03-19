@@ -1,20 +1,64 @@
 <ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>
-      Blank
-    </ion-title>
+  <ion-toolbar color="dark">
+    <ion-title>Portfolio Profesional</ion-title>
+    <ion-buttons slot="end">
+      <ion-button (click)="openCV()" style="--color: #a29bfe; font-weight: bold;">
+        Ver CV
+      </ion-button>
+    </ion-buttons>
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
-    </ion-toolbar>
-  </ion-header>
-
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
+<ion-content [fullscreen]="true" style="--background: #000000;">
+  
+  <div style="text-align: center; padding: 50px 20px;">
+    <h1 style="font-size: 3em; font-weight: 800; background: linear-gradient(to right, #a29bfe, #6c5ce7, #00d2ff); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">
+      Ana Honrubia Borja
+    </h1>
+    <p style="color: #888; font-size: 1.2em;">Estudiante de DAM | IES Leonardo Da Vinci</p>
   </div>
+
+  <section id="sobre-mi" style="padding: 0 10px;">
+    <ion-grid>
+      <ion-row class="ion-align-items-center ion-justify-content-center">
+        <ion-col size="auto">
+          <h2 style="color: white; margin: 0; font-size: 1.8em;">Sobre mí</h2>
+        </ion-col>
+        <ion-col size="auto">
+          <ion-button fill="clear" (click)="scrollTo('formacion')" style="--color: #00d2ff;">Formación</ion-button>
+          <ion-button fill="clear" (click)="scrollTo('experiencia')" style="--color: #a29bfe;">Experiencia</ion-button>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+
+    <ion-card style="--background: #121212; border: 1px solid #333; margin-top: 10px;">
+      <ion-card-content style="color: #cccccc; text-align: center;">
+        Me considero una persona responsable y ordenada. Me gusta trabajar en equipo y busco mi primera experiencia laboral con muchas ganas de aprender.
+      </ion-card-content>
+    </ion-card>
+  </section>
+
+  <section id="formacion" style="padding: 20px 10px;">
+    <h2 style="color: white; text-align: center;">Formación</h2>
+    <ion-list style="background: transparent;">
+      <ion-item style="--background: transparent; --color: white;">
+        <ion-label>
+          <h3 style="color: #a29bfe;">Grado Superior DAM</h3>
+          <p style="color: #888;">IES Leonardo Da Vinci (2024 - Actualidad)</p>
+        </ion-label>
+      </ion-item>
+    </ion-list>
+  </section>
+
+  <section id="experiencia" style="padding: 20px 10px;">
+    <h2 style="color: white; text-align: center;">Experiencia</h2>
+    <ion-card style="--background: #121212; border-left: 4px solid #00d2ff;">
+      <ion-card-header>
+        <ion-card-subtitle style="color: #00d2ff;">3D Seguridad</ion-card-subtitle>
+        <ion-card-title style="color: white;">Departamento de Contabilidad</ion-card-title>
+      </ion-card-header>
+      <ion-card-content style="color: #bbb;">Junio - Septiembre 2025</ion-card-content>
+    </ion-card>
+  </section>
+
 </ion-content>
