@@ -93,3 +93,57 @@ ion-card {
     }
   }
 }
+
+.skills-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
+  max-width: 800px;
+  margin: 0 auto;
+
+  .skill-badge {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    color: white;
+    padding: 8px 16px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 0.9rem;
+    transition: 0.3s;
+
+    ion-icon {
+      font-size: 1.2rem;
+      color: #00d2ff; 
+    }
+
+    &:hover {
+      background: #00d2ff;
+      color: black;
+      border-color: #00d2ff;
+      transform: translateY(-3px);
+      
+      ion-icon {
+        color: black;
+      }
+    }
+  }
+}
+
+.contact-icons-container {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  
+  ion-icon {
+    color: white;
+    font-size: 35px;
+    transition: 0.3s;
+    &:hover {
+      color: #00d2ff;
+      transform: scale(1.2);
+    }
+  }
+}

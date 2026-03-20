@@ -5,6 +5,8 @@
       <ion-button (click)="scrollTo('formacion')" style="--color: #00d2ff; font-size: 0.9rem; font-weight: 500;">Formación</ion-button>
       <ion-button (click)="scrollTo('proyectos')" style="--color: #a600ff; font-size: 0.9rem; font-weight: 500;">Proyectos</ion-button>
       <ion-button (click)="scrollTo('experiencia')" style="--color: #a29bfe; font-size: 0.9rem; font-weight: 500;">Experiencia</ion-button>
+      <ion-button (click)="scrollTo('habilidades')" style="--color: #655dd4; font-size: 0.9rem; font-weight: 500;">Habilidades</ion-button>
+      <ion-button (click)="scrollTo('contacto')" style="--color: #3527f2; font-size: 0.9rem; font-weight: 500;">Contacto</ion-button>
     </ion-buttons>
 
     <ion-buttons slot="end" style="margin-right: 15px;">
@@ -262,6 +264,46 @@
       </ion-card-header>
       <ion-card-content style="color: #bbb;">Marzo - Junio 2026</ion-card-content>
     </ion-card>
-
   </section>
+
+  <section id="habilidades" style="padding: 20px; text-align: center;">
+    <h2 style="color: white; font-weight: bold; margin-bottom: 30px;">Habilidades y Herramientas</h2>
+
+    <div class="skills-container">
+      <div class="skill-badge"><ion-icon name="logo-html5"></ion-icon> HTML5</div>
+      <div class="skill-badge"><ion-icon name="logo-css3"></ion-icon> CSS3 / SCSS</div>
+      <div class="skill-badge"><ion-icon name="logo-javascript"></ion-icon> JavaScript</div>
+      <div class="skill-badge"><ion-icon name="code-slash-outline"></ion-icon> TypeScript</div>
+      <div class="skill-badge"><ion-icon name="logo-java"></ion-icon> Java</div>
+
+      <div class="skill-badge"><ion-icon name="logo-angular"></ion-icon> Angular</div>
+      <div class="skill-badge"><ion-icon name="logo-ionic"></ion-icon> Ionic Framework</div>
+      <div class="skill-badge"><ion-icon name="logo-firebase"></ion-icon> Firebase</div>
+      <div class="skill-badge"><ion-icon name="logo-android"></ion-icon> Android Studio</div>
+      <div class="skill-badge"><ion-icon name="logo-github"></ion-icon> Git / GitHub</div>
+    </div>
+  </section>
+
+  <section id="contacto" style="padding: 20px; text-align: center;">
+    <h2 style="color: white; font-weight: bold; margin-bottom: 30px;">¿Hablamos?</h2>
+      <br>
+      <div class="contact-icons-container">
+        <a href="https://www.linkedin.com/in/ana-honrubia-borja-4a0660187" target="_blank">
+          <ion-icon name="logo-linkedin"></ion-icon>
+        </a>
+        <a href="mailto:anahonrubia23@gmail.com">
+          <ion-icon name="mail-outline"></ion-icon>
+        </a>
+        <a href="https://github.com/AnaHonrubia" target="_blank">
+          <ion-icon name="logo-github"></ion-icon>
+        </a>
+        <a href="https://instagram.com/anitahb23" target="_blank">
+          <ion-icon name="logo-instagram"></ion-icon>
+        </a>
+      </div>
+  </section>
+
+
+
+
 </ion-content>
