@@ -4,7 +4,7 @@ import {
   IonCard, IonCardHeader, IonCardTitle, IonCardSubtitle, IonCardContent, 
   IonItem, IonLabel, IonList, IonIcon, IonGrid, IonBadge, IonRow, IonAvatar, IonImg, IonCol
 } from '@ionic/angular/standalone';
-import { logoGithub } from 'ionicons/icons';
+import { logoLinkedin, mailOutline, logoGithub } from 'ionicons/icons';
 import { addIcons } from 'ionicons';
 
 @Component({
@@ -21,7 +21,7 @@ import { addIcons } from 'ionicons';
 
 export class HomePage {
   constructor() {
-    addIcons({ logoGithub });
+    addIcons({ logoLinkedin, mailOutline, logoGithub });
   }
 
   scrollTo(id: string) {

@@ -74,3 +74,22 @@ ion-card {
   border-radius: 8px;
   overflow: hidden;
 }
+
+.contact-icons-container {
+  display: flex;
+  justify-content: center; 
+  gap: 30px; 
+  margin-top: -40px;
+  padding: 20px;
+
+  ion-icon {
+    color: white; 
+    font-size: 32px; 
+    transition: 0.3s; 
+
+    &:hover {
+      color: #00d2ff; 
+      transform: scale(1.1); 
+    }
+  }
+}
