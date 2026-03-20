@@ -33,3 +33,44 @@ ion-card {
     box-shadow: 0 4px 15px rgba(56, 128, 255, 0.3);
   }
 }
+
+.project-card-container {
+  width: 280px; 
+  margin: 10px auto;
+}
+
+.compact-project-card {
+  background-color: #121212; 
+  border-radius: 12px;
+  border: 1px solid #222;
+  padding: 10px;
+}
+
+.compact-button-group-split {
+  display: flex;
+  justify-content: space-between; 
+  align-items: center;
+  margin-top: 15px;
+  padding: 0 5px; 
+}
+
+.project-btn {
+  --border-radius: 8px !important; 
+  height: 32px !important;
+  font-size: 0.8rem !important;
+  margin: 0;
+  text-transform: none;
+}
+
+.github-btn {
+  --background: #0a0a0a; 
+  --color: white;
+  border: 1px solid #333;
+}
+
+.apk-btn {
+  background: linear-gradient(90deg, #8a3ffc, #e639af); 
+  --color: white;
+  border-radius: 8px;
+  overflow: hidden;
+}

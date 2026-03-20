@@ -122,21 +122,22 @@
 </section>
 
 <section id="proyectos" style="padding: 20px;">
-  <h2 style="color: white; text-align: center; margin-bottom: 30px; font-weight: bold;">Mis Proyectos</h2>
-  
+  <h2 style="color: white; text-align: center; margin-bottom: 38px; font-weight: bold;">Mis Proyectos</h2>
+
   <ion-grid>
     <ion-row>
       <ion-col size="12" size-md="6">
         <ion-card style="--background: #121212; border: 1px solid #333; margin: 0; text-align: center;">
           <ion-card-header>
-            <ion-card-title style="color: white; font-weight: bold;">Queso Mecanico</ion-card-title>
+            <ion-card-title style="color: white; font-weight: bold;">Queso Mecánico</ion-card-title>
             <ion-card-subtitle style="color: #00d2ff;">Desarrollo de Interfaces</ion-card-subtitle>
           </ion-card-header>
-          
+
           <ion-card-content style="color: #bbb;">
-            Aplicación web/móvil desarrollada en Angular e Ionic para la creación de itinerarios turísticos personalizados mediante el filtrado dinámico de destinos.
+            Aplicación web/móvil desarrollada en Angular e Ionic para la creación de itinerarios turísticos personalizados mediante el filtrado dinámico de destinos. 
             Destaca por su motor lógico que gestiona datos relacionales, calcula presupuestos en tiempo real y garantiza la persistencia de información en el dispositivo.
-            <div style="margin-top: 15px; display: flex; gap: 5px; justify-content: center;">
+            
+            <div style="margin-top: 15px; display: flex; flex-wrap: wrap; gap: 5px; justify-content: center;">
               <ion-badge style="--background: #a29bfe; color: black;">Angular</ion-badge>
               <ion-badge style="--background: #a29bfe; color: black;">Ionic</ion-badge>
               <ion-badge style="--background: #a29bfe; color: black;">Capacitor</ion-badge>
@@ -144,7 +145,7 @@
               <ion-badge style="--background: #a29bfe; color: black;">TS</ion-badge>
               <ion-badge style="--background: #a29bfe; color: black;">SCSS</ion-badge>
             </div>
-            
+
             <div style="margin-top: 20px;">
               <ion-button fill="outline" size="small" style="--color: #a29bfe; --border-color: #a29bfe;" href="https://tu-enlace-feria.com" target="_blank">
                 Ver Demo
@@ -154,26 +155,40 @@
         </ion-card>
       </ion-col>
 
-        <ion-col size="12" size-md="6">
+      <ion-col size="12" size-md="6">
         <ion-card style="--background: #121212; border: 1px solid #333; margin: 0; text-align: center;">
-          
-          <ion-card-header>
-            <ion-card-title style="color: white; font-weight: bold;">App Futbol TFG</ion-card-title>
-            <ion-card-subtitle style="color: #00d2ff;">Proyecto final de grado</ion-card-subtitle>
-          </ion-card-header>
-          
-          <ion-card-content style="color: #bbb;">
-            Aplicación móvil diseñada para digitalizar el scouting futbolístico, facilitando a los clubes el descubrimiento de talento mediante perfiles multimedia. Incluye un sistema de mensajería de ofertas vinculado a bases de datos NoSQL para garantizar la comunicación directa entre el club y el jugador.
-            <div style="margin-top: 15px; display: flex; gap: 5px; justify-content: center;">
+          <ion-card-content style="padding: 25px 15px;">
+            
+            <ion-avatar style="width: 80px; height: 80px; margin: 0 auto 20px auto; border: 3px solid #00d2ff; box-shadow: 0 0 10px rgba(0, 210, 255, 0.5);">
+              <img src="assets/icon/futblink.jpg" alt="App Futbol TFG" style="width: 100%; height: 100%; object-fit: cover;" />
+            </ion-avatar>
+
+            <ion-card-header style="padding: 0; margin-bottom: 15px;">
+              <ion-card-title style="color: white; font-weight: bold;">FutbLink</ion-card-title>
+              <ion-card-subtitle style="color: #00d2ff;">Proyecto final de grado</ion-card-subtitle>
+            </ion-card-header>
+
+            <p style="color: #bbb; line-height: 1.5; margin-bottom: 20px;">
+              Aplicación móvil diseñada para digitalizar el scouting futbolístico, facilitando a los clubes el descubrimiento de talento mediante perfiles multimedia. 
+              Incluye mensajería NoSQL para comunicación directa.
+            </p>
+
+            <div style="margin-top: 15px; display: flex; gap: 5px; justify-content: center; margin-bottom: 25px;">
               <ion-badge style="--background: #00d2ff; color: black;">Android Studio</ion-badge>
               <ion-badge style="--background: #00d2ff; color: black;">Firebase</ion-badge>
             </div>
-            
-            <div style="margin-top: 20px;">
-              <ion-button fill="outline" size="small" style="--color: #00d2ff; --border-color: #00d2ff;" href="https://tu-enlace-tfg.com" target="_blank">
-                Ver Demo
+
+            <div class="compact-button-group-split" style="display: flex; justify-content: space-between; align-items: center; margin-top: 15px;">
+              <ion-button class="project-btn github-btn" size="small" href="https://github.com/AnaHonrubia/FutbLink/tree/main/app/src/main/java/com/ahb/futblink" target="_blank">
+                <ion-icon name="logo-github" slot="start"></ion-icon>
+                Código
+              </ion-button>
+
+              <ion-button class="project-btn apk-btn" size="small" href="assets/apk/Futblink.apk" download="FutbLink.apk">
+                APK
               </ion-button>
             </div>
+
           </ion-card-content>
         </ion-card>
       </ion-col>
