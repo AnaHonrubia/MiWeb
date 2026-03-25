@@ -1,134 +1,36 @@
-<ion-header [translucent]="true" class="ion-no-border">
-  <ion-toolbar color="dark" style="--padding-start: 0.5rem; --padding-end: 0.5rem;">
-    <ion-buttons slot="start">
-      <ion-button (click)="scrollTo('sobre-mi')" style="--color: #ffffff; font-size: 0.9rem; font-weight: 500;">Sobre mí</ion-button>
-      <ion-button (click)="scrollTo('formacion')" style="--color: #00d2ff; font-size: 0.9rem; font-weight: 500;">Formación</ion-button>
-      <ion-button (click)="scrollTo('proyectos')" style="--color: #a600ff; font-size: 0.9rem; font-weight: 500;">Proyectos</ion-button>
-      <ion-button (click)="scrollTo('experiencia')" style="--color: #a29bfe; font-size: 0.9rem; font-weight: 500;">Experiencia</ion-button>
-      <ion-button (click)="scrollTo('habilidades')" style="--color: #655dd4; font-size: 0.9rem; font-weight: 500;">Habilidades</ion-button>
-      <ion-button (click)="scrollTo('contacto')" style="--color: #3527f2; font-size: 0.9rem; font-weight: 500;">Contacto</ion-button>
-    </ion-buttons>
-
-    <ion-buttons slot="end" style="margin-right: 1rem;">
-      <ion-button (click)="openCV()" 
-                  style="--background: #6c5ce7; 
-                         color: white; 
-                         --border-radius: 0.5rem; 
-                         font-weight: bold;
-                         --padding-start: 1rem;
-                         --padding-end: 1rem;">
-        Descargar CV
-      </ion-button>
-    </ion-buttons>
-  </ion-toolbar>
-</ion-header>
-
 <ion-content [fullscreen]="true" style="--background: #000000;">
   
-  <div style="text-align: center; padding: 6.25rem 1.25rem 3.75rem 1.25rem; background: linear-gradient(180deg, #1a1a1a 0%, #000000 100%);">
+  <main>
     
-    <ion-avatar style="width: 9.3rem; height: 9.3rem; margin: 0 auto; border: 0.25rem solid #6c5ce7; box-shadow: 0 0 1.25rem rgba(108, 92, 231, 0.5);">
-      <ion-img src="assets/icon/perfil.png" alt="Ana Honrubia"></ion-img>
-    </ion-avatar>
+    <section id="hero">
+       <div style="text-align: center; padding: 6.25rem 1.25rem; background: linear-gradient(180deg, #1a1a1a 0%, #000000 100%);">
+         </div>
+    </section>
 
-    <h1 style="font-size: 3.5em; font-weight: 800; background: linear-gradient(to right, #a29bfe, #6c5ce7, #00d2ff); -webkit-background-clip: text; -webkit-text-fill-color: transparent; margin-top: 1.9rem; margin-bottom: 0.6rem;">
-      Ana Honrubia Borja
-    </h1>
+    <section id="sobre-mi">
+      <app-sobre-mi></app-sobre-mi>
+    </section>
 
-    <p style="color: #ffffff; font-size: 1.4em; font-weight: 500; margin-top: 0;">
-      Estudiante de DAM | Especializada en Angular e Ionic
-    </p>
-    <p style="color: #888; font-size: 1.1em; max-width: 37.5rem; margin: 0.6rem auto 0 auto;">
-      IES Leonardo Da Vinci. Más de 500 horas de prácticas en empresas tecnológicas.
-    </p>
+    <section id="formacion">
+      <app-formacion></app-formacion>
+    </section>
 
-    <ion-button color="light" fill="outline" style="margin-top: 1.8rem;" (click)="scrollTo('sobre-mi')">
-      Conóceme
-    </ion-button>
-  </div>
+    <section id="proyectos">
+      <app-proyectos></app-proyectos>
+    </section>
 
-  <div class="contact-icons-container">
+    <section id="experiencia">
+      <app-experiencia></app-experiencia>
+    </section>
 
-    <a href="mailto:anahonrubia23@gmail.com">
-      <ion-icon name="mail-outline"></ion-icon>
-    </a>
+    <section id="habilidades">
+      <app-habilidades></app-habilidades>
+    </section>
 
-    <a href="https://github.com/AnaHonrubia" target="_blank">
-      <ion-icon name="logo-github"></ion-icon>
-    </a>
-  
-    <a href="https://www.linkedin.com/in/ana-honrubia-borja-4a0660187" target="_blank">
-      <ion-icon name="logo-linkedin"></ion-icon>
-    </a>
+    <section id="contacto">
+      <app-contacto></app-contacto>
+    </section>
 
-</div>
-
-  <section id="experiencia" style="padding: 1.25rem;">
-    <h2 style="color: white; text-align: center;">Experiencia Laboral</h2>
-
-    <ion-card style="--background: #121212; border-left: 0.25rem solid #00d2ff;">
-      <ion-card-header>
-        <ion-card-subtitle style="color: #00d2ff;">TECON</ion-card-subtitle>
-        <ion-card-title style="color: white;">Prácticas FP Dual (100h)</ion-card-title>
-      </ion-card-header>
-      <ion-card-content style="color: #bbb;">Mayo 2025</ion-card-content>
-    </ion-card>
-
-    <ion-card style="--background: #121212; border-left: 0.25rem solid #6c5ce7;">
-      <ion-card-header>
-        <ion-card-subtitle style="color: #a29bfe;">3D Seguridad</ion-card-subtitle>
-        <ion-card-title style="color: white;">Departamento de Contabilidad</ion-card-title>
-      </ion-card-header>
-      <ion-card-content style="color: #bbb;">Junio - Septiembre 2025</ion-card-content>
-    </ion-card>
-
-    <ion-card style="--background: #121212; border-left: 0.25rem solid #00d2ff;">
-      <ion-card-header>
-        <ion-card-subtitle style="color: #00d2ff;">GRUPO MOVIL CONECTATE S.L</ion-card-subtitle>
-        <ion-card-title style="color: white;">Prácticas 2º Curso GS DAM (400h)</ion-card-title>
-      </ion-card-header>
-      <ion-card-content style="color: #bbb;">Marzo - Junio 2026</ion-card-content>
-    </ion-card>
-  </section>
-
-  <section id="habilidades" style="padding: 1.25rem; text-align: center;">
-    <h2 style="color: white; font-weight: bold; margin-bottom: 1.87rem;">Habilidades y Herramientas</h2>
-
-    <div class="skills-container">
-      <div class="skill-badge"><ion-icon name="logo-html5"></ion-icon> HTML5</div>
-      <div class="skill-badge"><ion-icon name="logo-css3"></ion-icon> CSS3 / SCSS</div>
-      <div class="skill-badge"><ion-icon name="logo-javascript"></ion-icon> JavaScript</div>
-      <div class="skill-badge"><ion-icon name="code-slash-outline"></ion-icon> TypeScript</div>
-      <div class="skill-badge"><ion-icon name="logo-java"></ion-icon> Java</div>
-
-      <div class="skill-badge"><ion-icon name="logo-angular"></ion-icon> Angular</div>
-      <div class="skill-badge"><ion-icon name="logo-ionic"></ion-icon> Ionic Framework</div>
-      <div class="skill-badge"><ion-icon name="logo-firebase"></ion-icon> Firebase</div>
-      <div class="skill-badge"><ion-icon name="logo-android"></ion-icon> Android Studio</div>
-      <div class="skill-badge"><ion-icon name="logo-github"></ion-icon> Git / GitHub</div>
-    </div>
-  </section>
-
-  <section id="contacto" style="padding: 1.25rem; text-align: center;">
-    <h2 style="color: white; font-weight: bold; margin-bottom: 1.87rem;">¿Hablamos?</h2>
-      <br>
-      <div class="contact-icons-container">
-        <a href="https://www.linkedin.com/in/ana-honrubia-borja-4a0660187" target="_blank">
-          <ion-icon name="logo-linkedin"></ion-icon>
-        </a>
-        <a href="mailto:anahonrubia23@gmail.com">
-          <ion-icon name="mail-outline"></ion-icon>
-        </a>
-        <a href="https://github.com/AnaHonrubia" target="_blank">
-          <ion-icon name="logo-github"></ion-icon>
-        </a>
-        <a href="https://instagram.com/anitahb23" target="_blank">
-          <ion-icon name="logo-instagram"></ion-icon>
-        </a>
-      </div>
-  </section>
-
-
-
+  </main>
 
 </ion-content>
