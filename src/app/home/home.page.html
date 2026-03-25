@@ -1,5 +1,5 @@
 <ion-header [translucent]="true" class="ion-no-border">
-  <ion-toolbar color="dark" style="--padding-start: 8px; --padding-end: 8px;">
+  <ion-toolbar color="dark" style="--padding-start: 0.5rem; --padding-end: 0.5rem;">
     <ion-buttons slot="start">
       <ion-button (click)="scrollTo('sobre-mi')" style="--color: #ffffff; font-size: 0.9rem; font-weight: 500;">Sobre mí</ion-button>
       <ion-button (click)="scrollTo('formacion')" style="--color: #00d2ff; font-size: 0.9rem; font-weight: 500;">Formación</ion-button>
@@ -9,14 +9,14 @@
       <ion-button (click)="scrollTo('contacto')" style="--color: #3527f2; font-size: 0.9rem; font-weight: 500;">Contacto</ion-button>
     </ion-buttons>
 
-    <ion-buttons slot="end" style="margin-right: 15px;">
+    <ion-buttons slot="end" style="margin-right: 1rem;">
       <ion-button (click)="openCV()" 
                   style="--background: #6c5ce7; 
                          color: white; 
-                         --border-radius: 10px; 
+                         --border-radius: 0.5rem; 
                          font-weight: bold;
-                         --padding-start: 15px;
-                         --padding-end: 15px;">
+                         --padding-start: 1rem;
+                         --padding-end: 1rem;">
         Descargar CV
       </ion-button>
     </ion-buttons>
@@ -25,24 +25,24 @@
 
 <ion-content [fullscreen]="true" style="--background: #000000;">
   
-  <div style="text-align: center; padding: 100px 20px 60px 20px; background: linear-gradient(180deg, #1a1a1a 0%, #000000 100%);">
+  <div style="text-align: center; padding: 6.25rem 1.25rem 3.75rem 1.25rem; background: linear-gradient(180deg, #1a1a1a 0%, #000000 100%);">
     
-    <ion-avatar style="width: 150px; height: 150px; margin: 0 auto; border: 4px solid #6c5ce7; box-shadow: 0 0 20px rgba(108, 92, 231, 0.5);">
+    <ion-avatar style="width: 9.3rem; height: 9.3rem; margin: 0 auto; border: 0.25rem solid #6c5ce7; box-shadow: 0 0 1.25rem rgba(108, 92, 231, 0.5);">
       <ion-img src="assets/icon/perfil.png" alt="Ana Honrubia"></ion-img>
     </ion-avatar>
 
-    <h1 style="font-size: 3.5em; font-weight: 800; background: linear-gradient(to right, #a29bfe, #6c5ce7, #00d2ff); -webkit-background-clip: text; -webkit-text-fill-color: transparent; margin-top: 30px; margin-bottom: 10px;">
+    <h1 style="font-size: 3.5em; font-weight: 800; background: linear-gradient(to right, #a29bfe, #6c5ce7, #00d2ff); -webkit-background-clip: text; -webkit-text-fill-color: transparent; margin-top: 1.9rem; margin-bottom: 0.6rem;">
       Ana Honrubia Borja
     </h1>
 
     <p style="color: #ffffff; font-size: 1.4em; font-weight: 500; margin-top: 0;">
       Estudiante de DAM | Especializada en Angular e Ionic
     </p>
-    <p style="color: #888; font-size: 1.1em; max-width: 600px; margin: 10px auto 0 auto;">
+    <p style="color: #888; font-size: 1.1em; max-width: 37.5rem; margin: 0.6rem auto 0 auto;">
       IES Leonardo Da Vinci. Más de 500 horas de prácticas en empresas tecnológicas.
     </p>
 
-    <ion-button color="light" fill="outline" style="margin-top: 30px;" (click)="scrollTo('sobre-mi')">
+    <ion-button color="light" fill="outline" style="margin-top: 1.8rem;" (click)="scrollTo('sobre-mi')">
       Conóceme
     </ion-button>
   </div>
@@ -63,30 +63,30 @@
 
 </div>
 
-  <section id="sobre-mi" style="padding: 60px 20px; background: #000000; text-align: center;">
+  <section id="sobre-mi" style="padding: 3.75rem 1.25rem; background: #000000; text-align: center;">
   
-  <h2 style="color: white; font-size: 2.2em; font-weight: bold; margin-bottom: 10px;">Sobre Mí</h2>
-  <div style="width: 60px; height: 3px; background: linear-gradient(to right, #a29bfe, #6c5ce7); margin: 0 auto 40px auto; border-radius: 2px;"></div>
+  <h2 style="color: white; font-size: 2.2em; font-weight: bold; margin-bottom: 0.6rem;">Sobre Mí</h2>
+  <div style="width: 3.75rem; height: 0.2rem; background: linear-gradient(to right, #a29bfe, #6c5ce7); margin: 0 auto 2.5rem auto; border-radius: 0.15rem;"></div>
 
-  <p style="color: #cccccc; font-size: 1.1em; max-width: 800px; margin: 0 auto 50px auto; line-height: 1.6; text-align: justify;">
+  <p style="color: #cccccc; font-size: 1.1em; max-width: 50rem; margin: 0 auto 3.12rem auto; line-height: 1.6; text-align: justify;">
     ¡Hola! Soy <b>Ana Honrubia Borja</b>, estudiante de DAM en el IES Leonardo Da Vinci. 
     Me defino como una persona responsable, ordenada y con gran capacidad de trabajo en equipo. Busco mi primera oportunidad para demostrar mis ganas de aprender y crecer en el sector tecnológico.
   </p>
 
-  <ion-grid style="max-width: 900px; margin: 0 auto;">
+  <ion-grid style="max-width: 50rem; margin: 0 auto;">
     <ion-row class="ion-justify-content-center">
       
       <ion-col size="12" size-md="6">
-        <ion-card style="--background: #121212; border: 1px solid #333; margin: 10px; height: 100%; border-radius: 12px; box-shadow: 0 4px 6px rgba(0,0,0,0.3);">
-          <ion-card-content style="padding: 25px 15px; text-align: center;">
+        <ion-card style="--background: #121212; border: 0.06rem solid #333; margin: 0.62rem; height: 100%; border-radius: 0.75rem; box-shadow: 0 0.25rem 0.38rem rgba(0,0,0,0.3);">
+          <ion-card-content style="padding: 1.57rem 1rem; text-align: center;">
             
-            <ion-avatar style="width: 80px; height: 80px; margin: 0 auto 20px auto; border: 3px solid #6c5ce7; box-shadow: 0 0 10px rgba(108, 92, 231, 0.5);">
+            <ion-avatar style="width: 5rem; height: 5rem; margin: 0 auto 1.25rem auto; border: 0.2rem solid #6c5ce7; box-shadow: 0 0 0.6rem rgba(108, 92, 231, 0.5);">
               <img src="assets/icon/desarrollo.jpg" alt="Desarrollo" style="width: 100%; height: 100%; object-fit: contain;" />
             </ion-avatar>
 
-            <h3 style="color: white; font-weight: bold; font-size: 1.4em; margin-bottom: 15px;">Desarrollo</h3>
+            <h3 style="color: white; font-weight: bold; font-size: 1.4em; margin-bottom: 0.9rem;">Desarrollo</h3>
           
-            <p style="color: #888; font-size: 1rem; line-height: 1.6; margin: 0; max-width: 250px; margin-left: auto; margin-right: auto;">
+            <p style="color: #888; font-size: 1rem; line-height: 1.6; margin: 0; max-width: 15.6rem; margin-left: auto; margin-right: auto;">
               Construyo aplicaciones web o multiplataforma utilizando las últimas tecnologías.
             </p>
               
@@ -95,14 +95,14 @@
       </ion-col>
 
       <ion-col size="12" size-md="6">
-        <ion-card style="--background: #121212; border: 1px solid #333; margin: 10px; height: 100%; border-radius: 12px; box-shadow: 0 4px 6px rgba(0,0,0,0.3);">
-          <ion-card-content style="padding: 25px 15px; text-align: center;">
+        <ion-card style="--background: #121212; border: 0.06rem solid #333; margin: 0.6rem; height: 100%; border-radius: 0.75rem; box-shadow: 0 0.25rem 0.37rem rgba(0,0,0,0.3);">
+          <ion-card-content style="padding: 1.5rem 0.9rem; text-align: center;">
             
-            <ion-avatar style="width: 80px; height: 80px; margin: 0 auto 20px auto; border: 3px solid #00d2ff; box-shadow: 0 0 10px rgba(0, 210, 255, 0.5);">
+            <ion-avatar style="width: 5rem; height: 5rem; margin: 0 auto 1.25rem auto; border: 0.2rem solid #00d2ff; box-shadow: 0 0 0.6rem rgba(0, 210, 255, 0.5);">
               <img src="assets/icon/soluciones.jpg" alt="Soluciones" style="width: 100%; height: 100%; object-fit: contain;" />
             </ion-avatar>
 
-            <h3 style="color: white; font-weight: bold; font-size: 1.25em; margin-bottom: 8px;">Soluciones</h3>
+            <h3 style="color: white; font-weight: bold; font-size: 1.25em; margin-bottom: 0.5rem;">Soluciones</h3>
             <p style="color: #888; font-size: 0.95em; line-height: 1.5; margin: 0;">
               Me gusta plantear los retos con un enfoque creativo, buscando siempre la mejor experiencia para el usuario.
             </p>
@@ -114,15 +114,15 @@
   </ion-grid>
 </section>
 
-<section id="formacion" style="padding: 40px 20px;">
-  <h2 style="color: white; text-align: center; margin-bottom: 30px; font-weight: bold;">Formación Académica</h2>
+<section id="formacion" style="padding: 2.5rem 1.25rem;">
+  <h2 style="color: white; text-align: center; margin-bottom: 1.88rem; font-weight: bold;">Formación Académica</h2>
   
   <ion-list style="background: transparent;">
-    <ion-item style="--background: transparent; --color: white; margin-bottom: 20px;">
+    <ion-item style="--background: transparent; --color: white; margin-bottom: 1.25rem;">
       <ion-label>
         <h3 style="color: #a29bfe; font-size: 1.3rem; font-weight: bold;">Grado Superior DAM</h3>
         <p style="color: #ffffff; font-size: 1.1rem;">IES Leonardo Da Vinci (2024 - Actualidad)</p>
-        <p style="color: #00d2ff; margin-top: 8px; font-style: italic;">
+        <p style="color: #00d2ff; margin-top: 0.5rem; font-style: italic;">
           FP Dual 1º Curso: 100h en TECON (Mayo 2025)
         </p>
         <p style="color: #00d2ff; font-style: italic;">
@@ -140,30 +140,30 @@
   </ion-list>
 </section>
 
-<section id="proyectos" style="padding: 20px;">
-  <h2 style="color: white; text-align: center; margin-bottom: 38px; font-weight: bold;">Mis Proyectos</h2>
+<section id="proyectos" style="padding: 1.25rem;">
+  <h2 style="color: white; text-align: center; margin-bottom: 2.4rem; font-weight: bold;">Mis Proyectos</h2>
 
   <ion-grid>
     <ion-row>
       <ion-col size="12" size-md="6">
-        <ion-card style="--background: #121212; border: 1px solid #333; margin: 0; text-align: center;">
-          <ion-card-content style="padding: 25px 15px;">
+        <ion-card style="--background: #121212; border: 0.06rem solid #333; margin: 0; text-align: center;">
+          <ion-card-content style="padding: 1.56rem 0.93rem;">
             
-            <ion-avatar style="width: 80px; height: 80px; margin: 0 auto 20px auto; border: 3px solid #00d2ff; box-shadow: 0 0 10px rgba(0, 210, 255, 0.5);">
+            <ion-avatar style="width: 5rem; height: 5rem; margin: 0 auto 1.25rem auto; border: 0.2rem solid #00d2ff; box-shadow: 0 0 0.6rem rgba(0, 210, 255, 0.5);">
               <img src="assets/icon/quesoMecanico.jpg" alt="App de Albacete" style="width: 100%; height: 100%; object-fit: cover;" />
             </ion-avatar>
 
-            <ion-card-header style="padding: 0; margin-bottom: 15px;">
+            <ion-card-header style="padding: 0; margin-bottom: 0.9rem;">
               <ion-card-title style="color: white; font-weight: bold;">Queso Mecánico</ion-card-title>
               <ion-card-subtitle style="color: #00d2ff;">Proyecto de Desarrollo de Interfaces</ion-card-subtitle>
             </ion-card-header>
 
-            <p style="color: #bbb; line-height: 1.5; margin-bottom: 20px;">
+            <p style="color: #bbb; line-height: 1.5; margin-bottom: 1.25rem;">
               Aplicación web/móvil desarrollada en Angular e Ionic para la creación de itinerarios turísticos personalizados mediante el filtrado dinámico de destinos. 
               Destaca por su motor lógico que gestiona datos relacionales, calcula presupuestos en tiempo real y garantiza la persistencia de información en el dispositivo.
             </p>
 
-            <div style="margin-top: 15px; display: flex; flex-wrap: wrap; gap: 5px; justify-content: center;">
+            <div style="margin-top: 0.93rem; display: flex; flex-wrap: wrap; gap: 0.31rem; justify-content: center;">
               <ion-badge style="--background: #a29bfe; color: black;">Angular</ion-badge>
               <ion-badge style="--background: #a29bfe; color: black;">Ionic</ion-badge>
               <ion-badge style="--background: #a29bfe; color: black;">Capacitor</ion-badge>
@@ -172,7 +172,7 @@
               <ion-badge style="--background: #a29bfe; color: black;">SCSS</ion-badge>
             </div>
 
-            <div class="compact-button-group-split" style="display: flex; justify-content: space-between; align-items: center; margin-top: 15px;">
+            <div class="compact-button-group-split" style="display: flex; justify-content: space-between; align-items: center; margin-top: 0.93rem;">
               <ion-button class="project-btn github-btn" size="small" href="https://github.com/AnaHonrubia/QuesoMecanico/tree/main/src/app" target="_blank">
                 <ion-icon name="logo-github" slot="start"></ion-icon>
                 Código
@@ -188,29 +188,29 @@
       </ion-col>
 
       <ion-col size="12" size-md="6">
-        <ion-card style="--background: #121212; border: 1px solid #333; margin: 0; text-align: center;">
-          <ion-card-content style="padding: 25px 15px;">
+        <ion-card style="--background: #121212; border: 0.06rem solid #333; margin: 0; text-align: center;">
+          <ion-card-content style="padding: 1.56rem 0.93rem;">
             
-            <ion-avatar style="width: 80px; height: 80px; margin: 0 auto 20px auto; border: 3px solid #00d2ff; box-shadow: 0 0 10px rgba(0, 210, 255, 0.5);">
+            <ion-avatar style="width: 5rem; height: 5rem; margin: 0 auto 1.25rem auto; border: 0.2rem solid #00d2ff; box-shadow: 0 0 0.62rem rgba(0, 210, 255, 0.5);">
               <img src="assets/icon/futblink.jpg" alt="App Futbol TFG" style="width: 100%; height: 100%; object-fit: cover;" />
             </ion-avatar>
 
-            <ion-card-header style="padding: 0; margin-bottom: 15px;">
+            <ion-card-header style="padding: 0; margin-bottom: 0.93rem;">
               <ion-card-title style="color: white; font-weight: bold;">FutbLink</ion-card-title>
               <ion-card-subtitle style="color: #00d2ff;">Proyecto final de grado</ion-card-subtitle>
             </ion-card-header>
 
-            <p style="color: #bbb; line-height: 1.5; margin-bottom: 20px;">
+            <p style="color: #bbb; line-height: 1.5; margin-bottom: 1.25rem;">
               Aplicación móvil diseñada para digitalizar el scouting futbolístico, facilitando a los clubes el descubrimiento de talento mediante perfiles multimedia. 
               Incluye mensajería NoSQL para comunicación directa.
             </p>
 
-            <div style="margin-top: 15px; display: flex; gap: 5px; justify-content: center; margin-bottom: 25px;">
+            <div style="margin-top: 0.93rem; display: flex; gap: 0.31rem; justify-content: center; margin-bottom: 1.56rem;">
               <ion-badge style="--background: #00d2ff; color: black;">Android Studio</ion-badge>
               <ion-badge style="--background: #00d2ff; color: black;">Firebase</ion-badge>
             </div>
 
-            <div class="compact-button-group-split" style="display: flex; justify-content: space-between; align-items: center; margin-top: 15px;">
+            <div class="compact-button-group-split" style="display: flex; justify-content: space-between; align-items: center; margin-top: 0.93rem;">
               <ion-button class="project-btn github-btn" size="small" href="https://github.com/AnaHonrubia/FutbLink/tree/main/app/src/main/java/com/ahb/futblink" target="_blank">
                 <ion-icon name="logo-github" slot="start"></ion-icon>
                 Código
@@ -225,23 +225,23 @@
         </ion-card>
       </ion-col>
     </ion-row>
-      <div style="display: flex; justify-content: center; margin-top: 40px; margin-bottom: 20px;">
+      <div style="display: flex; justify-content: center; margin-top: 2.5rem; margin-bottom: 1.25rem;">
         <ion-button 
           fill="outline" 
-          style="--border-color: #333; --color: white; --border-radius: 8px; text-transform: none; font-weight: normal;" 
+          style="--border-color: #333; --color: white; --border-radius: 0.5rem; text-transform: none; font-weight: normal;" 
           href="https://github.com/AnaHonrubia" 
           target="_blank">
-          <ion-icon name="logo-github" slot="start" style="font-size: 20px;"></ion-icon>
+          <ion-icon name="logo-github" slot="start" style="font-size: 1.25rem;"></ion-icon>
           Ver todos mis proyectos
         </ion-button>
       </div>
   </ion-grid>
 </section>
 
-  <section id="experiencia" style="padding: 20px;">
+  <section id="experiencia" style="padding: 1.25rem;">
     <h2 style="color: white; text-align: center;">Experiencia Laboral</h2>
 
-    <ion-card style="--background: #121212; border-left: 4px solid #00d2ff;">
+    <ion-card style="--background: #121212; border-left: 0.25rem solid #00d2ff;">
       <ion-card-header>
         <ion-card-subtitle style="color: #00d2ff;">TECON</ion-card-subtitle>
         <ion-card-title style="color: white;">Prácticas FP Dual (100h)</ion-card-title>
@@ -249,7 +249,7 @@
       <ion-card-content style="color: #bbb;">Mayo 2025</ion-card-content>
     </ion-card>
 
-    <ion-card style="--background: #121212; border-left: 4px solid #6c5ce7;">
+    <ion-card style="--background: #121212; border-left: 0.25rem solid #6c5ce7;">
       <ion-card-header>
         <ion-card-subtitle style="color: #a29bfe;">3D Seguridad</ion-card-subtitle>
         <ion-card-title style="color: white;">Departamento de Contabilidad</ion-card-title>
@@ -257,7 +257,7 @@
       <ion-card-content style="color: #bbb;">Junio - Septiembre 2025</ion-card-content>
     </ion-card>
 
-    <ion-card style="--background: #121212; border-left: 4px solid #00d2ff;">
+    <ion-card style="--background: #121212; border-left: 0.25rem solid #00d2ff;">
       <ion-card-header>
         <ion-card-subtitle style="color: #00d2ff;">GRUPO MOVIL CONECTATE S.L</ion-card-subtitle>
         <ion-card-title style="color: white;">Prácticas 2º Curso GS DAM (400h)</ion-card-title>
@@ -266,8 +266,8 @@
     </ion-card>
   </section>
 
-  <section id="habilidades" style="padding: 20px; text-align: center;">
-    <h2 style="color: white; font-weight: bold; margin-bottom: 30px;">Habilidades y Herramientas</h2>
+  <section id="habilidades" style="padding: 1.25rem; text-align: center;">
+    <h2 style="color: white; font-weight: bold; margin-bottom: 1.87rem;">Habilidades y Herramientas</h2>
 
     <div class="skills-container">
       <div class="skill-badge"><ion-icon name="logo-html5"></ion-icon> HTML5</div>
@@ -284,8 +284,8 @@
     </div>
   </section>
 
-  <section id="contacto" style="padding: 20px; text-align: center;">
-    <h2 style="color: white; font-weight: bold; margin-bottom: 30px;">¿Hablamos?</h2>
+  <section id="contacto" style="padding: 1.25rem; text-align: center;">
+    <h2 style="color: white; font-weight: bold; margin-bottom: 1.87rem;">¿Hablamos?</h2>
       <br>
       <div class="contact-icons-container">
         <a href="https://www.linkedin.com/in/ana-honrubia-borja-4a0660187" target="_blank">
