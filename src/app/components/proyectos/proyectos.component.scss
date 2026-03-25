@@ -1,0 +1,35 @@
+/* Estilo general de las cards de proyectos */
+ion-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  margin: 0.625rem;
+  &:hover {
+    transform: translateY(-0.31rem);
+    box-shadow: 0 0.25rem 0.93rem rgba(56, 128, 255, 0.3);
+  }
+}
+
+.project-btn {
+  --border-radius: 0.5rem !important;
+  height: 2rem !important;
+  font-size: 0.8rem !important;
+  text-transform: none;
+}
+
+/* Botón específico para GitHub */
+.github-btn {
+  --background: #0a0a0a;
+  --color: white;
+  border: 0.06rem solid #333;
+}
+
+/* Botón específico para APK / Demo */
+/* Aquí puedes cambiar el gradiente para cada proyecto si quieres */
+.apk-btn-queso {
+  --background: linear-gradient(90deg, #8a3ffc, #e639af);
+  --color: white;
+}
+
+.apk-btn-futblink {
+  --background: linear-gradient(90deg, #00d2ff, #3a7bd5);
+  --color: white;
+}
