@@ -1,0 +1,34 @@
+.skills-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.75rem;
+  max-width: 50rem;
+  margin: 0 auto;
+
+  .skill-badge {
+    background: rgba(255, 255, 255, 0.05);
+    border: 0.06rem solid rgba(255, 255, 255, 0.2);
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 1.25rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.9rem;
+    transition: 0.3s;
+
+    ion-icon {
+      font-size: 1.2rem;
+      color: #00d2ff;
+    }
+
+    &:hover {
+      background: #00d2ff;
+      color: #000;
+      border-color: #00d2ff;
+      transform: translateY(-0.2rem);
+      ion-icon { color: #000; }
+    }
+  }
+}
