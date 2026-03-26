@@ -1,36 +1,54 @@
+<ion-header [translucent]="true" class="ion-no-border">
+  <ion-toolbar color="dark" style="--padding-start: 0.5rem; --padding-end: 0.5rem;">
+    <ion-buttons slot="start">
+      <ion-button (click)="scrollTo('sobre-mi')" style="--color: #ffffff; font-size: 0.9rem; font-weight: 500;">Sobre mí</ion-button>
+      <ion-button (click)="scrollTo('formacion')" style="--color: #00d2ff; font-size: 0.9rem; font-weight: 500;">Formación</ion-button>
+      <ion-button (click)="scrollTo('proyectos')" style="--color: #a600ff; font-size: 0.9rem; font-weight: 500;">Proyectos</ion-button>
+      <ion-button (click)="scrollTo('experiencia')" style="--color: #a29bfe; font-size: 0.9rem; font-weight: 500;">Experiencia</ion-button>
+      <ion-button (click)="scrollTo('habilidades')" style="--color: #655dd4; font-size: 0.9rem; font-weight: 500;">Habilidades</ion-button>
+      <ion-button (click)="scrollTo('contacto')" style="--color: #3527f2; font-size: 0.9rem; font-weight: 500;">Contacto</ion-button>
+    </ion-buttons>
+
+    <ion-buttons slot="end" style="margin-right: 1rem;">
+      <ion-button (click)="openCV()" 
+                  style="--background: #6c5ce7; color: white; --border-radius: 0.5rem; font-weight: bold;">
+        CV
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
 <ion-content [fullscreen]="true" style="--background: #000000;">
-  
   <main>
-    
     <section id="hero">
-       <div style="text-align: center; padding: 6.25rem 1.25rem; background: linear-gradient(180deg, #1a1a1a 0%, #000000 100%);">
-         </div>
+      <div style="text-align: center; padding: 6.25rem 1.25rem 3.75rem 1.25rem; background: linear-gradient(180deg, #1a1a1a 0%, #000000 100%);">
+        <ion-avatar style="width: 9.3rem; height: 9.3rem; margin: 0 auto; border: 0.25rem solid #6c5ce7; box-shadow: 0 0 1.25rem rgba(108, 92, 231, 0.5);">
+          <ion-img src="assets/icon/perfil.png" alt="Ana Honrubia"></ion-img>
+        </ion-avatar>
+
+        <h1 style="font-size: 3.5rem; font-weight: 800; background: linear-gradient(to right, #a29bfe, #6c5ce7, #00d2ff); -webkit-background-clip: text; -webkit-text-fill-color: transparent; margin-top: 2rem; margin-bottom: 0.6rem;">
+          Ana Honrubia Borja
+        </h1>
+
+        <p style="color: #ffffff; font-size: 1.4rem; font-weight: 500;">
+          Estudiante de DAM | Especializada en Angular e Ionic
+        </p>
+
+        <p style="color: #888; font-size: 1.1rem; max-width: 37.5rem; margin: 0.6rem auto 0 auto;">
+          IES Leonardo Da Vinci. Más de 500 horas de prácticas en empresas tecnológicas.
+        </p>
+
+        <ion-button color="light" fill="outline" style="margin-top: 2rem;" (click)="scrollTo('sobre-mi')">
+          Conóceme
+        </ion-button>
+      </div>
     </section>
 
-    <section id="sobre-mi">
-      <app-sobre-mi></app-sobre-mi>
-    </section>
-
-    <section id="formacion">
-      <app-formacion></app-formacion>
-    </section>
-
-    <section id="proyectos">
-      <app-proyectos></app-proyectos>
-    </section>
-
-    <section id="experiencia">
-      <app-experiencia></app-experiencia>
-    </section>
-
-    <section id="habilidades">
-      <app-habilidades></app-habilidades>
-    </section>
-
-    <section id="contacto">
-      <app-contacto></app-contacto>
-    </section>
-
+    <app-sobre-mi></app-sobre-mi>
+    <app-formacion></app-formacion>
+    <app-proyectos></app-proyectos>
+    <app-experiencia></app-experiencia>
+    <app-habilidades></app-habilidades>
+    <app-contacto></app-contacto>
   </main>
-
 </ion-content>
