@@ -5,7 +5,7 @@ import {
 import { addIcons } from 'ionicons';
 import { logoLinkedin, mailOutline, logoGithub } from 'ionicons/icons';
 
-// Importa tus nuevos componentes aquí:
+// Importación de tus componentes Standalone
 import { SobreMiComponent } from '../components/sobre-mi/sobre-mi.component';
 import { FormacionComponent } from '../components/formacion/formacion.component';
 import { ProyectosComponent } from '../components/proyectos/proyectos.component';
@@ -19,9 +19,9 @@ import { ContactoComponent } from '../components/contacto/contacto.component';
   styleUrls: ['home.page.scss'],
   standalone: true,
   imports: [
-    // Componentes de Ionic necesarios para la Home
+    // Componentes nativos de Ionic para la estructura principal
     IonHeader, IonToolbar, IonContent, IonButton, IonButtons, IonAvatar, IonImg,
-    // Tus componentes personalizados
+    // Tus componentes modulares
     SobreMiComponent,
     FormacionComponent,
     ProyectosComponent,
@@ -32,7 +32,6 @@ import { ContactoComponent } from '../components/contacto/contacto.component';
 })
 export class HomePage {
   constructor() {
-    // En la Home solo registramos los iconos que se ven en la cabecera/hero
     addIcons({ logoLinkedin, mailOutline, logoGithub });
   }
 
