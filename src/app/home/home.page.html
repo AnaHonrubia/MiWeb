@@ -20,29 +20,9 @@
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true" style="--background: #000000;">
+<ion-content [fullscreen]="true">
   <main>
-    <section id="hero">
-      <div style="text-align: center; padding: 6.25rem 1.25rem 3.75rem 1.25rem; background: linear-gradient(180deg, #1a1a1a 0%, #000000 100%);">
-        
-        <!--Ver la imagen con el borde lila usando el nuevo componente atomico usado-->
-        <app-avatar imagen="assets/icon/perfil.png" alt="Ana Honrubia"></app-avatar>   
-
-        <h1 style="font-size: 3.5rem; font-weight: 800; background: linear-gradient(to right, #a29bfe, #6c5ce7, #00d2ff); -webkit-background-clip: text; -webkit-text-fill-color: transparent; margin-top: 2rem; margin-bottom: 0.6rem;">
-          Ana Honrubia Borja
-        </h1>
-
-        <p style="color: #ffffff; font-size: 1.4rem; font-weight: 500;">
-          Estudiante de DAM | Especializada en Angular e Ionic
-        </p>
-
-        <p style="color: #888; font-size: 1.1rem; max-width: 37.5rem; margin: 0.6rem auto 0 auto;">
-          IES Leonardo Da Vinci. Más de 500 horas de prácticas en empresas tecnológicas.
-        </p>
-
-        <app-boton texto="Conóceme" (clic)="scrollTo('sobre-mi')"></app-boton>
-      </div>
-    </section>
+    <app-hero (clicConoceme)="scrollTo('sobre-mi')"></app-hero>
 
     <app-sobre-mi></app-sobre-mi>
     <app-formacion></app-formacion>
