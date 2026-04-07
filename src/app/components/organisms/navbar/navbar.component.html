@@ -1,0 +1,22 @@
+<ion-header [translucent]="true" class="ion-no-border">
+  <ion-toolbar color="dark" class="navbar-toolbar">
+    
+    <ion-buttons slot="start" class="nav-buttons-list">
+      <ion-button (click)="onNav('sobre-mi')" class="nav-btn btn-white">Sobre mí</ion-button>
+      <ion-button (click)="onNav('formacion')" class="nav-btn btn-blue">Formación</ion-button>
+      <ion-button (click)="onNav('proyectos')" class="nav-btn btn-purple">Proyectos</ion-button>
+      <ion-button (click)="onNav('experiencia')" class="nav-btn btn-lilac">Experiencia</ion-button>
+      <ion-button (click)="onNav('habilidades')" class="nav-btn btn-indigo">Habilidades</ion-button>
+      <ion-button (click)="onNav('contacto')" class="nav-btn btn-deepblue">Contacto</ion-button>
+    </ion-buttons>
+
+    <ion-buttons slot="end" class="cv-button-container">
+      <app-boton 
+        texto="CV" 
+        color="primary" 
+        fill="solid" 
+        (clic)="onCV()">
+      </app-boton>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>

@@ -1,0 +1,25 @@
+.navbar-toolbar {
+  --padding-start: 0.5rem;
+  --padding-end: 0.5rem;
+}
+
+.cv-button-container {
+  margin-right: 1rem;
+}
+
+.nav-buttons-list {
+  
+  /* Seleccionamos todos los ion-button dentro de la lista */
+  ion-button {
+    font-size: 0.9rem;
+    font-weight: 500;
+    
+    /* ¡IMPORTANTE! Forzamos el color en el elemento nativo interno de Ionic */
+    &.btn-white { --color: #ffffff !important; color: #ffffff !important; }
+    &.btn-blue { --color: #00d2ff !important; color: #00d2ff !important; }
+    &.btn-purple { --color: #a600ff !important; color: #a600ff !important; }
+    &.btn-lilac { --color: #a29bfe !important; color: #a29bfe !important; }
+    &.btn-indigo { --color: #655dd4 !important; color: #655dd4 !important; }
+    &.btn-deepblue { --color: #3527f2 !important; color: #3527f2 !important; }
+  }
+}
