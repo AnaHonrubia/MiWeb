@@ -1,0 +1,37 @@
+<ion-card class="proyecto-card">
+  <ion-card-content class="card-body">
+    
+    <div class="content-top">
+      <ion-avatar class="proyecto-avatar" [style.--border-color]="colorPrincipal">
+        <img [src]="imagen" [alt]="titulo" />
+      </ion-avatar>
+
+      <ion-card-header class="header-no-padding">
+        <ion-card-title class="titulo-proyecto">{{ titulo }}</ion-card-title>
+        <ion-card-subtitle class="subtitulo-proyecto" [style.color]="colorPrincipal">
+          {{ subtitulo }}
+        </ion-card-subtitle>
+      </ion-card-header>
+
+      <p class="descripcion-proyecto">{{ descripcion }}</p>
+
+      <div class="tags-container">
+        @for (tag of tags; track tag) {
+          <ion-badge [style.--background]="colorPrincipal">{{ tag }}</ion-badge>
+        }
+      </div>
+    </div>
+
+    <div class="buttons-container">
+      <ion-button fill="clear" class="btn-git" [href]="repoUrl" target="_blank">
+        <ion-icon name="logo-github" slot="start"></ion-icon>
+        Código
+      </ion-button>
+      
+      <ion-button class="btn-accion" [style.--background]="colorPrincipal" [href]="accionUrl" [attr.download]="esApk ? '' : null" target="_blank">
+        {{ textoAccion }}
+      </ion-button>
+    </div>
+
+  </ion-card-content>
+</ion-card>
