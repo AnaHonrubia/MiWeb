@@ -1,10 +1,5 @@
 import { Component } from '@angular/core';
-import { IonIcon } from '@ionic/angular/standalone';
-import { addIcons } from 'ionicons';
-import { 
-  logoHtml5, logoCss3, logoJavascript, logoAngular, 
-  logoIonic, logoGithub, codeSlashOutline 
-} from 'ionicons/icons';
+import { ItemHabilidadComponent } from '../atoms/item-habilidad/item-habilidad.component';
 import { TituloComponent } from '../atoms/titulo/titulo.component';
 
 @Component({
@@ -12,18 +7,13 @@ import { TituloComponent } from '../atoms/titulo/titulo.component';
   templateUrl: './habilidades.component.html',
   styleUrls: ['./habilidades.component.scss'],
   standalone: true,
-  imports: [IonIcon, TituloComponent]
+  imports: [
+    ItemHabilidadComponent, 
+    TituloComponent
+  ]
 })
 export class HabilidadesComponent {
   constructor() {
-    addIcons({ 
-      'logo-html5': logoHtml5, 
-      'logo-css3': logoCss3, 
-      'logo-javascript': logoJavascript, 
-      'logo-angular': logoAngular, 
-      'logo-ionic': logoIonic, 
-      'logo-github': logoGithub,
-      'code-slash-outline': codeSlashOutline
-    });
+    
   }
 }
