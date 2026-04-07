@@ -13,6 +13,7 @@ import { ExperienciaComponent } from '../components/experiencia/experiencia.comp
 import { HabilidadesComponent } from '../components/habilidades/habilidades.component';
 import { ContactoComponent } from '../components/contacto/contacto.component';
 import { BotonComponent } from '../components/atoms/boton/boton.component';
+import { AvatarComponent } from '../components/atoms/avatar/avatar.component';
 
 @Component({
   selector: 'app-home',
@@ -23,13 +24,8 @@ import { BotonComponent } from '../components/atoms/boton/boton.component';
     // Componentes nativos de Ionic para la estructura principal
     IonHeader, IonToolbar, IonContent, IonButton, IonButtons, IonAvatar, IonImg,
     // Tus componentes modulares
-    SobreMiComponent,
-    FormacionComponent,
-    ProyectosComponent,
-    ExperienciaComponent,
-    HabilidadesComponent,
-    ContactoComponent,
-    BotonComponent
+    SobreMiComponent, FormacionComponent, ProyectosComponent, ExperienciaComponent, HabilidadesComponent, ContactoComponent,
+    BotonComponent, AvatarComponent
   ],
 })
 export class HomePage {

@@ -10,14 +10,12 @@
     </ion-buttons>
 
     <ion-buttons slot="end" style="margin-right: 1rem;">
-      
       <app-boton 
         texto="CV" 
         color="primary" 
         fill="solid" 
         (clic)="openCV()">
       </app-boton>
-
     </ion-buttons>
   </ion-toolbar>
 </ion-header>
@@ -26,9 +24,9 @@
   <main>
     <section id="hero">
       <div style="text-align: center; padding: 6.25rem 1.25rem 3.75rem 1.25rem; background: linear-gradient(180deg, #1a1a1a 0%, #000000 100%);">
-        <ion-avatar style="width: 9.3rem; height: 9.3rem; margin: 0 auto; border: 0.25rem solid #6c5ce7; box-shadow: 0 0 1.25rem rgba(108, 92, 231, 0.5);">
-          <ion-img src="assets/icon/perfil.png" alt="Ana Honrubia"></ion-img>
-        </ion-avatar>
+        
+        <!--Ver la imagen con el borde lila usando el nuevo componente atomico usado-->
+        <app-avatar imagen="assets/icon/perfil.png" alt="Ana Honrubia"></app-avatar>   
 
         <h1 style="font-size: 3.5rem; font-weight: 800; background: linear-gradient(to right, #a29bfe, #6c5ce7, #00d2ff); -webkit-background-clip: text; -webkit-text-fill-color: transparent; margin-top: 2rem; margin-bottom: 0.6rem;">
           Ana Honrubia Borja
