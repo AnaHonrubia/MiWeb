@@ -1,28 +1,33 @@
-<section id="contacto" style="padding: 5rem 1.25rem; text-align: center; background: #000000;">
+<section id="contacto" class="contacto-section">
 
   <app-titulo texto="¿Hablamos?"></app-titulo>
 
-  <div>
-    
-    <a href="https://www.linkedin.com/in/ana-honrubia-borja-4a0660187" target="_blank" style="text-decoration: none;">
-      <ion-icon name="logo-linkedin" style="font-size: 3rem; color: #0077b5; transition: transform 0.3s;"></ion-icon>
-    </a>
+  <div class="icons-row">
+    <app-social-icon 
+      link="https://www.linkedin.com/in/ana-honrubia-borja-4a0660187" 
+      iconName="logo-linkedin" 
+      color="#0077b5">
+    </app-social-icon>
 
-    <a href="mailto:anahonrubia23@gmail.com" style="text-decoration: none;">
-      <ion-icon name="mail-outline" style="font-size: 3rem; color: #ffffff; transition: transform 0.3s;"></ion-icon>
-    </a>
+    <app-social-icon 
+      link="mailto:anahonrubia23@gmail.com" 
+      iconName="mail-outline">
+    </app-social-icon>
 
-    <a href="https://github.com/AnaHonrubia" target="_blank" style="text-decoration: none;">
-      <ion-icon name="logo-github" style="font-size: 3rem; color: #a29bfe; transition: transform 0.3s;"></ion-icon>
-    </a>
+    <app-social-icon 
+      link="https://github.com/AnaHonrubia" 
+      iconName="logo-github" 
+      color="#a29bfe">
+    </app-social-icon>
 
-    <a href="https://instagram.com/anitahb23" target="_blank" style="text-decoration: none;">
-      <ion-icon name="logo-instagram" style="font-size: 3rem; color: #e4405f; transition: transform 0.3s;"></ion-icon>
-    </a>
-
+    <app-social-icon 
+      link="https://instagram.com/anitahb23" 
+      iconName="logo-instagram" 
+      color="#e4405f">
+    </app-social-icon>
   </div>
 
-  <p style="color: #666; margin-top: 4rem; font-size: 0.9rem;">
-    © 2026 Ana Honrubia Borja - Desarrolladora Full Stack
+  <p class="copyright">
+    © 2026 Ana Honrubia Borja - Desarrolladora de Aplicaciones Multiplataforma
   </p>
 </section>
