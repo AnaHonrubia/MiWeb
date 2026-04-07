@@ -1,0 +1,11 @@
+<ion-item class="formacion-item">
+  <ion-label>
+    <h3 class="grado-titulo">{{ grado }}</h3>
+    <p class="centro-info">{{ centro }} ({{ fecha }})</p>
+    
+    <div *ngIf="detalles" class="detalles-container">
+      <p class="detalle-texto">{{ detalles }}</p>
+      <p *ngIf="detallesSecundarios" class="detalle-texto">{{ detallesSecundarios }}</p>
+    </div>
+  </ion-label>
+</ion-item>
