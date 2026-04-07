@@ -5,13 +5,14 @@ import {
   logoHtml5, logoCss3, logoJavascript, logoAngular, 
   logoIonic, logoGithub, codeSlashOutline 
 } from 'ionicons/icons';
+import { TituloComponent } from '../atoms/titulo/titulo.component';
 
 @Component({
   selector: 'app-habilidades',
   templateUrl: './habilidades.component.html',
   styleUrls: ['./habilidades.component.scss'],
   standalone: true,
-  imports: [IonIcon]
+  imports: [IonIcon, TituloComponent]
 })
 export class HabilidadesComponent {
   constructor() {
