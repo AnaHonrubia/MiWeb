@@ -1,0 +1,38 @@
+.card-atomica {
+  --background: #121212;
+  border: 0.06rem solid var(--border-color);
+  margin: 0.6rem;
+  height: 100%;
+  border-radius: 0.75rem;
+  box-shadow: 0 0.25rem 0.38rem rgba(0, 0, 0, 0.3);
+  text-align: center;
+
+  h3 {
+    color: white;
+    font-weight: bold;
+    font-size: 1.4rem;
+    margin-bottom: 0.9rem;
+  }
+
+  p {
+    color: #888;
+    font-size: 1rem;
+    line-height: 1.6;
+    margin: 0 auto;
+    max-width: 15.6rem;
+  }
+}
+
+.avatar-card {
+  width: 5rem;
+  height: 5rem;
+  margin: 0 auto 1.25rem auto;
+  border-width: 0.2rem;
+  border-style: solid;
+  
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+}
