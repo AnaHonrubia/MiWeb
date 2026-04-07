@@ -1,0 +1,14 @@
+.social-link {
+  text-decoration: none;
+  display: inline-block;
+  margin: 0 0.9rem;
+  
+  ion-icon {
+    font-size: 3rem;
+    transition: transform 0.3s ease-in-out;
+
+    &:hover {
+      transform: scale(1.2);
+    }
+  }
+}
