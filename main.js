@@ -9,15 +9,14 @@ function createWindow() {
     backgroundColor: '#000000',
     webPreferences: {
       nodeIntegration: true,
-      contextIsolation: false
+      contextIsolation: false,
+      webSecurity: false,
+      allowRunningInsecureContent: true 
     }
   });
 
-  // Esta línea es la más importante: apunta a tu build de Atomic Design
   win.loadFile(path.join(__dirname, 'www/index.html'));
 
-  // Opcional: Abrir la consola de desarrollador al empezar para ver errores
-  // win.webContents.openDevTools();
 }
 
 app.whenReady().then(createWindow);

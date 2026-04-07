@@ -1,6 +1,7 @@
 {
   "name": "miWebPersonal",
   "version": "0.0.1",
+  "main": "main.js",
   "author": "Ionic Framework",
   "homepage": "https://ionicframework.com/",
   "scripts": {
@@ -11,7 +12,8 @@
     "test": "ng test",
     "lint": "ng lint",
     "deploy": "ionic build --prod -- --base-href=/MiWeb/ && npx gh-pages -d www",
-    "electron": "electron ."
+    "electron": "npx electron .",
+    "electron:build": "ionic build --prod -- --base-href=./ && electron-builder"
   },
   "private": true,
   "dependencies": {
@@ -49,6 +51,8 @@
     "@types/jasmine": "~5.1.0",
     "@typescript-eslint/eslint-plugin": "^8.18.0",
     "@typescript-eslint/parser": "^8.18.0",
+    "electron": "^41.1.1",
+    "electron-builder": "^26.8.1",
     "eslint": "^9.16.0",
     "eslint-plugin-import": "^2.29.1",
     "eslint-plugin-jsdoc": "^48.2.1",
@@ -63,5 +67,16 @@
     "karma-jasmine-html-reporter": "~2.1.0",
     "typescript": "~5.9.0"
   },
-  "description": "An Ionic project"
+  "description": "An Ionic project",
+  "build": {
+    "appId": "com.anahonrubia.cv",
+    "productName": "AnaHonrubiaCV",
+    "directories": {
+      "output": "dist_electron"
+    },
+    "win": {
+      "target": "portable",
+      "icon": "src/assets/icon/chica-ordenador.jpg"
+    }
+  }
 }
