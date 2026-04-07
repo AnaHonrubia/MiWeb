@@ -12,6 +12,7 @@ import { ProyectosComponent } from '../components/proyectos/proyectos.component'
 import { ExperienciaComponent } from '../components/experiencia/experiencia.component';
 import { HabilidadesComponent } from '../components/habilidades/habilidades.component';
 import { ContactoComponent } from '../components/contacto/contacto.component';
+import { BotonComponent } from '../components/atoms/boton/boton.component';
 
 @Component({
   selector: 'app-home',
@@ -27,7 +28,8 @@ import { ContactoComponent } from '../components/contacto/contacto.component';
     ProyectosComponent,
     ExperienciaComponent,
     HabilidadesComponent,
-    ContactoComponent
+    ContactoComponent,
+    BotonComponent
   ],
 })
 export class HomePage {
