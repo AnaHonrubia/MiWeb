@@ -2,13 +2,14 @@ import { Component } from '@angular/core';
 import { IonIcon } from '@ionic/angular/standalone';
 import { addIcons } from 'ionicons';
 import { logoLinkedin, mailOutline, logoGithub, logoInstagram } from 'ionicons/icons';
+import { TituloComponent } from '../atoms/titulo/titulo.component';
 
 @Component({
   selector: 'app-contacto',
   templateUrl: './contacto.component.html',
   styleUrls: ['./contacto.component.scss'],
   standalone: true,
-  imports: [IonIcon]
+  imports: [IonIcon, TituloComponent]
 })
 export class ContactoComponent {
   constructor() {
