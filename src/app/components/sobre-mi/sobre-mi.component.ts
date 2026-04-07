@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-// Importamos solo lo que usa este componente
 import { 
   IonGrid, IonRow, IonCol, IonCard, IonCardContent, IonAvatar 
 } from '@ionic/angular/standalone';
