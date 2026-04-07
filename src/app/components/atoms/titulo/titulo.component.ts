@@ -9,4 +9,6 @@ import { Component, Input } from '@angular/core';
 export class TituloComponent {
   // Con esto podemos cambiar el texto desde otro componente
   @Input() texto: string = ''; 
+
+  
 }
