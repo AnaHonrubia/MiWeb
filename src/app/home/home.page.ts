@@ -17,18 +17,11 @@ import { ContactoComponent } from '../components/contacto/contacto.component';
   styleUrls: ['home.page.scss'],
   standalone: true,
   imports: [
-    // Solo necesitamos IonContent para el scroll principal
     IonContent,
     // Tus nuevos organismos
-    NavbarComponent,
-    HeroComponent,
+    NavbarComponent, HeroComponent,
     // Tus secciones modulares
-    SobreMiComponent,
-    FormacionComponent,
-    ProyectosComponent,
-    ExperienciaComponent,
-    HabilidadesComponent,
-    ContactoComponent
+    SobreMiComponent, FormacionComponent, ProyectosComponent, ExperienciaComponent, HabilidadesComponent, ContactoComponent
   ],
 })
 export class HomePage {
