@@ -1,15 +1,12 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-titulo',
   templateUrl: './titulo.component.html',
   styleUrls: ['./titulo.component.scss'],
-  standalone: true,
+  standalone: true
 })
-export class TituloComponent  implements OnInit {
-
-  constructor() { }
-
-  ngOnInit() {}
-
+export class TituloComponent {
+  // Con esto podemos cambiar el texto desde otro componente
+  @Input() texto: string = ''; 
 }
