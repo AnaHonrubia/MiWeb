@@ -3,6 +3,7 @@ import { Component } from '@angular/core';
 import { 
   IonGrid, IonRow, IonCol, IonCard, IonCardContent, IonAvatar 
 } from '@ionic/angular/standalone';
+import { TituloComponent } from '../atoms/titulo/titulo.component';
 
 @Component({
   selector: 'app-sobre-mi',
@@ -15,9 +16,8 @@ import {
     IonCol, 
     IonCard, 
     IonCardContent, 
-    IonAvatar
+    IonAvatar, 
+    TituloComponent
   ]
 })
-export class SobreMiComponent {
-  constructor() { }
-}
+export class SobreMiComponent { }
