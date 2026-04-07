@@ -1,0 +1,40 @@
+.formacion-item {
+  --background: transparent;
+  --padding-start: 0;
+  --inner-border-width: 0;
+  margin-bottom: 2rem;
+
+  ion-label {
+    margin: 0;
+  }
+}
+
+.grado-titulo {
+  color: #a29bfe;
+  font-size: 1.4rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.centro-info {
+  color: #ffffff;
+  font-size: 1.1rem;
+  margin-bottom: 0.75rem;
+}
+
+.detalles-container {
+  border-left: 0.15rem solid #00d2ff;
+  padding-left: 1rem;
+  margin-top: 0.5rem;
+}
+
+.detalle-texto {
+  color: #00d2ff;
+  font-size: 0.95rem;
+  font-style: italic;
+  margin-bottom: 0.3rem;
+  
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
