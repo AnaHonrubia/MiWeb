@@ -5,6 +5,7 @@ import {
 } from '@ionic/angular/standalone';
 import { addIcons } from 'ionicons';
 import { logoGithub } from 'ionicons/icons';
+import { TituloComponent } from '../atoms/titulo/titulo.component';
 
 @Component({
   selector: 'app-proyectos',
@@ -13,7 +14,8 @@ import { logoGithub } from 'ionicons/icons';
   standalone: true,
   imports: [
     IonGrid, IonRow, IonCol, IonCard, IonCardHeader, 
-    IonCardTitle, IonCardSubtitle, IonCardContent, IonBadge, IonButton, IonIcon, IonAvatar
+    IonCardTitle, IonCardSubtitle, IonCardContent, IonBadge, IonButton, IonIcon, IonAvatar,
+    TituloComponent
   ]
 })
 export class ProyectosComponent {
