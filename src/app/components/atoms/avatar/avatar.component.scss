@@ -1,0 +1,12 @@
+.avatar-pro {
+  margin: 0 auto;
+  border: 0.25rem solid #6c5ce7;
+  box-shadow: 0 0 1.25rem rgba(108, 92, 231, 0.5);
+  display: block; /* Para que el margin: 0 auto funcione */
+
+  ion-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
