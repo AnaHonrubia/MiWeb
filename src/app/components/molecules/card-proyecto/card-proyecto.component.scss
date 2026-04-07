@@ -1,0 +1,75 @@
+.proyecto-card {
+  --background: #121212;
+  border: 0.06rem solid #333;
+  margin: 0;
+  text-align: center;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+  &:hover {
+    transform: translateY(-0.5rem);
+    box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.5);
+  }
+}
+
+.card-body {
+  padding: 2rem 1.25rem;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.proyecto-avatar {
+  width: 5.6rem;
+  height: 5.6rem;
+  margin: 0 auto 1.5rem auto;
+  border: 0.2rem solid var(--border-color);
+  box-shadow: 0 0 0.8rem rgba(0, 0, 0, 0.2);
+  img { object-fit: cover; }
+}
+
+.titulo-proyecto {
+  color: white;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+.subtitulo-proyecto {
+  font-size: 0.9rem;
+  text-transform: none;
+}
+
+.descripcion-proyecto {
+  color: #bbb;
+  line-height: 1.6;
+  font-size: 0.95rem;
+  margin-bottom: 1.5rem;
+  text-align: justify;
+}
+
+.tags-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  justify-content: center;
+  margin-bottom: 2rem;
+  
+  ion-badge {
+    color: #000;
+    font-size: 0.75rem;
+    padding: 0.3rem 0.6rem;
+  }
+}
+
+.buttons-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+}
+
+.btn-git { --color: #ffffff; font-size: 0.85rem; text-transform: none; }
+.btn-accion { --border-radius: 0.5rem; font-size: 0.85rem; text-transform: none; color: black; font-weight: bold; }

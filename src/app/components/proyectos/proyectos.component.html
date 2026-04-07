@@ -1,95 +1,44 @@
-<section id="proyectos" style="padding: 3.75rem 1.25rem; background: #000000;">
+<section id="proyectos" class="proyectos-section">
   
-  <app-titulo texto="Mis Proyetos"></app-titulo>
+  <app-titulo texto="Mis Proyectos"></app-titulo>
 
-  <ion-grid style="max-width: 75rem; margin: 0 auto;">
+  <ion-grid class="proyectos-grid">
     <ion-row>
       
       <ion-col size="12" size-md="6">
-        <ion-card style="--background: #121212; border: 0.06rem solid #333; margin: 0.62rem; text-align: center; height: calc(100% - 1.24rem); display: flex; flex-direction: column;">
-          <ion-card-content style="padding: 2rem 1.25rem; flex-grow: 1; display: flex; flex-direction: column; justify-content:空间-between;">
-            
-            <div>
-              <ion-avatar style="width: 5.6rem; height: 5.6rem; margin: 0 auto 1.5rem auto; border: 0.2rem solid #00d2ff; box-shadow: 0 0 0.8rem rgba(0, 210, 255, 0.4);">
-                <img src="assets/icon/quesoMecanico.jpg" alt="App de Albacete" style="width: 100%; height: 100%; object-fit: cover;" />
-              </ion-avatar>
-
-              <ion-card-header style="padding: 0; margin-bottom: 1rem;">
-                <ion-card-title style="color: white; font-weight: bold; font-size: 1.5rem;">Queso Mecánico</ion-card-title>
-                <ion-card-subtitle style="color: #00d2ff; font-size: 0.9rem; text-transform: none;">Proyecto de Desarrollo de Interfaces</ion-card-subtitle>
-              </ion-card-header>
-
-              <p style="color: #bbb; line-height: 1.6; font-size: 0.95rem; margin-bottom: 1.5rem; text-align: justify;">
-                Aplicación web/móvil desarrollada en Angular e Ionic para la creación de itinerarios turísticos personalizados. 
-                Gestiona datos relacionales, calcula presupuestos en tiempo real y garantiza la persistencia de información.
-              </p>
-
-              <div style="display: flex; flex-wrap: wrap; gap: 0.4rem; justify-content: center; margin-bottom: 2rem;">
-                <ion-badge style="--background: #a29bfe; color: #000; font-size: 0.75rem; padding: 0.3rem 0.6rem;">Angular</ion-badge>
-                <ion-badge style="--background: #a29bfe; color: #000; font-size: 0.75rem; padding: 0.3rem 0.6rem;">Ionic</ion-badge>
-                <ion-badge style="--background: #a29bfe; color: #000; font-size: 0.75rem; padding: 0.3rem 0.6rem;">Capacitor</ion-badge>
-                <ion-badge style="--background: #a29bfe; color: #000; font-size: 0.75rem; padding: 0.3rem 0.6rem;">TS</ion-badge>
-              </div>
-            </div>
-
-            <div style="display: flex; justify-content: space-between; align-items: center; gap: 1rem;">
-              <ion-button fill="clear" style="--color: #ffffff; font-size: 0.85rem; text-transform: none;" href="https://github.com/AnaHonrubia/QuesoMecanico" target="_blank">
-                <ion-icon name="logo-github" slot="start"></ion-icon>
-                Código
-              </ion-button>
-              <ion-button style="--background: #6c5ce7; --border-radius: 0.5rem; font-size: 0.85rem; text-transform: none;" href="https://anahonrubia.github.io/QuesoMecanico/" target="_blank">
-                Ver Demo
-              </ion-button>
-            </div>
-
-          </ion-card-content>
-        </ion-card>
+        <app-card-proyecto
+          titulo="Queso Mecánico"
+          subtitulo="Proyecto de Desarrollo de Interfaces"
+          descripcion="Aplicación web/móvil desarrollada en Angular e Ionic para la creación de itinerarios turísticos personalizados."
+          imagen="assets/icon/quesoMecanico.jpg"
+          colorPrincipal="#a29bfe"
+          [tags]="['Angular', 'Ionic', 'Capacitor', 'TS']"
+          repoUrl="https://github.com/AnaHonrubia/QuesoMecanico"
+          accionUrl="https://anahonrubia.github.io/QuesoMecanico/"
+          textoAccion="Ver Demo">
+        </app-card-proyecto>
       </ion-col>
 
       <ion-col size="12" size-md="6">
-        <ion-card style="--background: #121212; border: 0.06rem solid #333; margin: 0.62rem; text-align: center; height: calc(100% - 1.24rem); display: flex; flex-direction: column;">
-          <ion-card-content style="padding: 2rem 1.25rem; flex-grow: 1; display: flex; flex-direction: column; justify-content: space-between;">
-            
-            <div>
-              <ion-avatar style="width: 5.6rem; height: 5.6rem; margin: 0 auto 1.5rem auto; border: 0.2rem solid #00d2ff; box-shadow: 0 0 0.8rem rgba(0, 210, 255, 0.4);">
-                <img src="assets/icon/futblink.jpg" alt="App Futbol TFG" style="width: 100%; height: 100%; object-fit: cover;" />
-              </ion-avatar>
-
-              <ion-card-header style="padding: 0; margin-bottom: 1rem;">
-                <ion-card-title style="color: white; font-weight: bold; font-size: 1.5rem;">FutbLink</ion-card-title>
-                <ion-card-subtitle style="color: #00d2ff; font-size: 0.9rem; text-transform: none;">Proyecto Final de Grado</ion-card-subtitle>
-              </ion-card-header>
-
-              <p style="color: #bbb; line-height: 1.6; font-size: 0.95rem; margin-bottom: 1.5rem; text-align: justify;">
-                Aplicación móvil para digitalizar el scouting futbolístico, facilitando el descubrimiento de talento mediante perfiles multimedia y mensajería NoSQL para comunicación directa.
-              </p>
-
-              <div style="display: flex; flex-wrap: wrap; gap: 0.4rem; justify-content: center; margin-bottom: 2rem;">
-                <ion-badge style="--background: #00d2ff; color: #000; font-size: 0.75rem; padding: 0.3rem 0.6rem;">Android Studio</ion-badge>
-                <ion-badge style="--background: #00d2ff; color: #000; font-size: 0.75rem; padding: 0.3rem 0.6rem;">Firebase</ion-badge>
-                <ion-badge style="--background: #00d2ff; color: #000; font-size: 0.75rem; padding: 0.3rem 0.6rem;">NoSQL</ion-badge>
-              </div>
-            </div>
-
-            <div style="display: flex; justify-content: space-between; align-items: center; gap: 1rem;">
-              <ion-button fill="clear" style="--color: #ffffff; font-size: 0.85rem; text-transform: none;" href="https://github.com/AnaHonrubia/FutbLink" target="_blank">
-                <ion-icon name="logo-github" slot="start"></ion-icon>
-                Código
-              </ion-button>
-              <ion-button style="--background: #00d2ff; --color: #000; --border-radius: 0.5rem; font-size: 0.85rem; text-transform: none;" href="assets/apk/Futblink.apk" download="FutbLink.apk">
-                Descargar APK
-              </ion-button>
-            </div>
-
-          </ion-card-content>
-        </ion-card>
+        <app-card-proyecto
+          titulo="FutbLink"
+          subtitulo="Proyecto Final de Grado"
+          descripcion="Aplicación móvil para digitalizar el scouting futbolístico mediante perfiles multimedia y mensajería NoSQL."
+          imagen="assets/icon/futblink.jpg"
+          colorPrincipal="#00d2ff"
+          [tags]="['Android Studio', 'Firebase', 'NoSQL']"
+          repoUrl="https://github.com/AnaHonrubia/FutbLink"
+          accionUrl="assets/apk/Futblink.apk"
+          textoAccion="Descargar APK"
+          [esApk]="true">
+        </app-card-proyecto>
       </ion-col>
 
     </ion-row>
 
-    <div style="display: flex; justify-content: center; margin-top: 3.5rem;">
-      <ion-button fill="outline" style="--border-color: #333; --color: white; --border-radius: 0.6rem; text-transform: none; font-weight: normal; --padding-start: 1.5rem; --padding-end: 1.5rem;" href="https://github.com/AnaHonrubia" target="_blank">
-        <ion-icon name="logo-github" slot="start" style="font-size: 1.25rem;"></ion-icon>
+    <div class="github-footer">
+      <ion-button fill="outline" class="btn-github-more" href="https://github.com/AnaHonrubia" target="_blank">
+        <ion-icon name="logo-github" slot="start"></ion-icon>
         Ver todos mis proyectos en GitHub
       </ion-button>
     </div>
