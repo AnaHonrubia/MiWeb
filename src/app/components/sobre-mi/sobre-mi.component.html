@@ -11,31 +11,20 @@
     <ion-row class="ion-justify-content-center">
       
       <ion-col size="12" size-md="6">
-        <ion-card style="--background: #121212; border: 0.06rem solid #333; margin: 0.62rem; height: 100%; border-radius: 0.75rem; box-shadow: 0 0.25rem 0.38rem rgba(0,0,0,0.3);">
-          <ion-card-content style="padding: 1.5rem 1rem; text-align: center;">
-            <ion-avatar style="width: 5rem; height: 5rem; margin: 0 auto 1.25rem auto; border: 0.2rem solid #6c5ce7; box-shadow: 0 0 0.6rem rgba(108, 92, 231, 0.5);">
-              <img src="assets/icon/desarrollo.jpg" alt="Desarrollo" style="width: 100%; height: 100%; object-fit: contain;" />
-            </ion-avatar>
-            <h3 style="color: white; font-weight: bold; font-size: 1.4rem; margin-bottom: 0.9rem;">Desarrollo</h3>
-            <p style="color: #888; font-size: 1rem; line-height: 1.6; margin: 0; max-width: 15.6rem; margin-left: auto; margin-right: auto;">
-              Construyo aplicaciones web o multiplataforma utilizando las últimas tecnologías.
-            </p>
-          </ion-card-content>
-        </ion-card>
+        <app-card-informativa 
+          imagen="assets/icon/desarrollo.jpg" 
+          titulo="Desarrollo" 
+          descripcion="Construyo aplicaciones web o multiplataforma utilizando las últimas tecnologías.">
+        </app-card-informativa>
       </ion-col>
 
       <ion-col size="12" size-md="6">
-        <ion-card style="--background: #121212; border: 0.06rem solid #333; margin: 0.6rem; height: 100%; border-radius: 0.75rem; box-shadow: 0 0.25rem 0.37rem rgba(0,0,0,0.3);">
-          <ion-card-content style="padding: 1.5rem 1rem; text-align: center;">
-            <ion-avatar style="width: 5rem; height: 5rem; margin: 0 auto 1.25rem auto; border: 0.2rem solid #00d2ff; box-shadow: 0 0 0.6rem rgba(0, 210, 255, 0.5);">
-              <img src="assets/icon/soluciones.jpg" alt="Soluciones" style="width: 100%; height: 100%; object-fit: contain;" />
-            </ion-avatar>
-            <h3 style="color: white; font-weight: bold; font-size: 1.4rem; margin-bottom: 0.9rem;">Soluciones</h3>
-            <p style="color: #888; font-size: 1rem; line-height: 1.6; margin: 0; max-width: 15.6rem; margin-left: auto; margin-right: auto;">
-              Me gusta plantear los retos con un enfoque creativo, buscando siempre la mejor experiencia para el usuario.
-            </p>
-          </ion-card-content>
-        </ion-card>
+        <app-card-informativa 
+          imagen="assets/icon/soluciones.jpg" 
+          titulo="Soluciones" 
+          colorBorde="#00d2ff"
+          descripcion="Me gusta plantear los retos con un enfoque creativo, buscando la mejor experiencia.">
+        </app-card-informativa>
       </ion-col>
 
     </ion-row>
