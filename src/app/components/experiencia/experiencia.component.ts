@@ -1,5 +1,5 @@
-import { Component, OnInit } from '@angular/core';
-import { IonCard, IonCardHeader, IonCardTitle, IonCardSubtitle, IonCardContent } from '@ionic/angular/standalone';
+import { Component } from '@angular/core';
+import { CardExperienciaComponent } from '../molecules/card-experiencia/card-experiencia.component';
 import { TituloComponent } from '../atoms/titulo/titulo.component';
 
 @Component({
@@ -7,12 +7,8 @@ import { TituloComponent } from '../atoms/titulo/titulo.component';
   templateUrl: './experiencia.component.html',
   styleUrls: ['./experiencia.component.scss'],
   standalone: true,
-  imports: [ IonCard, IonCardHeader, IonCardTitle, IonCardSubtitle, IonCardContent, TituloComponent  ]
+  imports: [CardExperienciaComponent, TituloComponent]
 })
-export class ExperienciaComponent  implements OnInit {
-
+export class ExperienciaComponent {
   constructor() { }
-
-  ngOnInit() {}
-
 }

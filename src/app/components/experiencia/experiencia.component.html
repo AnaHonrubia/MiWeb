@@ -1,38 +1,28 @@
-<section id="experiencia" style="padding: 3.75rem 1.25rem; background: #000000;">
+<section id="experiencia" class="experiencia-section">
 
   <app-titulo texto="Experiencia Laboral"></app-titulo>
 
-  <div>
-    
-    <ion-card style="--background: #121212; border-left: 0.25rem solid #00d2ff; margin-bottom: 1.5rem; border-radius: 0.5rem;">
-      <ion-card-header style="padding-bottom: 0.5rem;">
-        <ion-card-subtitle style="color: #00d2ff; font-size: 0.9rem; text-transform: uppercase; letter-spacing: 0.06rem;">TECON</ion-card-subtitle>
-        <ion-card-title style="color: white; font-size: 1.3rem; font-weight: bold;">Prácticas FP Dual (100h)</ion-card-title>
-      </ion-card-header>
-      <ion-card-content style="color: #888; font-size: 1rem;">
-        Mayo 2025
-      </ion-card-content>
-    </ion-card>
+  <div class="cards-container">
+    <app-card-experiencia 
+      empresa="TECON" 
+      cargo="Prácticas FP Dual (100h)" 
+      fecha="Mayo 2025" 
+      color="#00d2ff">
+    </app-card-experiencia>
 
-    <ion-card style="--background: #121212; border-left: 0.25rem solid #6c5ce7; margin-bottom: 1.5rem; border-radius: 0.5rem;">
-      <ion-card-header style="padding-bottom: 0.5rem;">
-        <ion-card-subtitle style="color: #a29bfe; font-size: 0.9rem; text-transform: uppercase; letter-spacing: 0.06rem;">3D Seguridad</ion-card-subtitle>
-        <ion-card-title style="color: white; font-size: 1.3rem; font-weight: bold;">Departamento de Contabilidad</ion-card-title>
-      </ion-card-header>
-      <ion-card-content style="color: #888; font-size: 1rem;">
-        Junio - Septiembre 2025
-      </ion-card-content>
-    </ion-card>
+    <app-card-experiencia 
+      empresa="3D Seguridad" 
+      cargo="Departamento de Contabilidad" 
+      fecha="Junio - Septiembre 2025" 
+      color="#a29bfe">
+    </app-card-experiencia>
 
-    <ion-card style="--background: #121212; border-left: 0.25rem solid #00d2ff; border-radius: 0.5rem;">
-      <ion-card-header style="padding-bottom: 0.5rem;">
-        <ion-card-subtitle style="color: #00d2ff; font-size: 0.9rem; text-transform: uppercase; letter-spacing: 0.06rem;">GRUPO MOVIL CONECTATE S.L</ion-card-subtitle>
-        <ion-card-title style="color: white; font-size: 1.3rem; font-weight: bold;">Prácticas 2º Curso GS DAM (400h)</ion-card-title>
-      </ion-card-header>
-      <ion-card-content style="color: #888; font-size: 1rem;">
-        Marzo - Junio 2026
-      </ion-card-content>
-    </ion-card>
-
+    <app-card-experiencia 
+      empresa="GRUPO MOVIL CONECTATE S.L" 
+      cargo="Prácticas 2º Curso GS DAM (400h)" 
+      fecha="Marzo - Junio 2026" 
+      color="#00d2ff">
+    </app-card-experiencia>
   </div>
+  
 </section>
