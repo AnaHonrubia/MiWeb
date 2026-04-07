@@ -1,24 +1,4 @@
-<ion-header [translucent]="true" class="ion-no-border">
-  <ion-toolbar color="dark" style="--padding-start: 0.5rem; --padding-end: 0.5rem;">
-    <ion-buttons slot="start">
-      <ion-button (click)="scrollTo('sobre-mi')" style="--color: #ffffff; font-size: 0.9rem; font-weight: 500;">Sobre mí</ion-button>
-      <ion-button (click)="scrollTo('formacion')" style="--color: #00d2ff; font-size: 0.9rem; font-weight: 500;">Formación</ion-button>
-      <ion-button (click)="scrollTo('proyectos')" style="--color: #a600ff; font-size: 0.9rem; font-weight: 500;">Proyectos</ion-button>
-      <ion-button (click)="scrollTo('experiencia')" style="--color: #a29bfe; font-size: 0.9rem; font-weight: 500;">Experiencia</ion-button>
-      <ion-button (click)="scrollTo('habilidades')" style="--color: #655dd4; font-size: 0.9rem; font-weight: 500;">Habilidades</ion-button>
-      <ion-button (click)="scrollTo('contacto')" style="--color: #3527f2; font-size: 0.9rem; font-weight: 500;">Contacto</ion-button>
-    </ion-buttons>
-
-    <ion-buttons slot="end" style="margin-right: 1rem;">
-      <app-boton 
-        texto="CV" 
-        color="primary" 
-        fill="solid" 
-        (clic)="openCV()">
-      </app-boton>
-    </ion-buttons>
-  </ion-toolbar>
-</ion-header>
+<app-navbar (navClick)="scrollTo($event)" (cvClick)="openCV()"></app-navbar>
 
 <ion-content [fullscreen]="true">
   <main>
