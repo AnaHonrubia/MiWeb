@@ -14,6 +14,7 @@ import { HabilidadesComponent } from '../components/habilidades/habilidades.comp
 import { ContactoComponent } from '../components/contacto/contacto.component';
 import { BotonComponent } from '../components/atoms/boton/boton.component';
 import { AvatarComponent } from '../components/atoms/avatar/avatar.component';
+import { HeroComponent } from '../components/organisms/hero/hero.component';
 
 @Component({
   selector: 'app-home',
@@ -25,7 +26,7 @@ import { AvatarComponent } from '../components/atoms/avatar/avatar.component';
     IonHeader, IonToolbar, IonContent, IonButton, IonButtons, IonAvatar, IonImg,
     // Tus componentes modulares
     SobreMiComponent, FormacionComponent, ProyectosComponent, ExperienciaComponent, HabilidadesComponent, ContactoComponent,
-    BotonComponent, AvatarComponent
+    BotonComponent, AvatarComponent, HeroComponent
   ],
 })
 export class HomePage {
